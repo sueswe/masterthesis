@@ -11,7 +11,8 @@
 \contentsline {subsection}{\numberline {6.3}Qualitative Inhaltsanalyse}{16}{subsection.6.3}
 \contentsline {subsubsection}{\numberline {6.3.1}Ablaufmodell}{18}{subsubsection.6.3.1}
 \contentsline {subsubsection}{\numberline {6.3.2}Kategorien}{20}{subsubsection.6.3.2}
-\contentsline {section}{\numberline {7}Historische Kontext}{21}{section.7}
-\contentsline {section}{\numberline {8}Abk\"urzungsverzeichnis}{22}{section.8}
-\contentsline {section}{\numberline {9}Literaturverzeichnis}{23}{section.9}
-\contentsline {section}{\numberline {10}Gedruckte Quellen}{24}{section.10}
+\contentsline {section}{\numberline {7}Historische Kontext}{22}{section.7}
+\contentsline {section}{\numberline {8}Abk\"urzungsverzeichnis}{26}{section.8}
+\contentsline {section}{\numberline {9}Literaturverzeichnis}{27}{section.9}
+\contentsline {subsection}{\numberline {9.1}Onlineartikel}{28}{subsection.9.1}
+\contentsline {section}{\numberline {10}Gedruckte Quellen}{29}{section.10}
