@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {6.3.1}Ablaufmodell}{18}{subsubsection.6.3.1}
 \contentsline {subsubsection}{\numberline {6.3.2}Kategorien}{20}{subsubsection.6.3.2}
 \contentsline {section}{\numberline {7}Historische Kontext}{22}{section.7}
-\contentsline {section}{\numberline {8}Abk\"urzungsverzeichnis}{27}{section.8}
-\contentsline {section}{\numberline {9}Literaturverzeichnis}{28}{section.9}
-\contentsline {subsection}{\numberline {9.1}Onlineartikel}{29}{subsection.9.1}
-\contentsline {section}{\numberline {10}Gedruckte Quellen}{30}{section.10}
+\contentsline {section}{\numberline {8}Abk\"urzungsverzeichnis}{28}{section.8}
+\contentsline {section}{\numberline {9}Literaturverzeichnis}{29}{section.9}
+\contentsline {subsection}{\numberline {9.1}Onlineartikel}{30}{subsection.9.1}
+\contentsline {section}{\numberline {10}Gedruckte Quellen}{31}{section.10}
