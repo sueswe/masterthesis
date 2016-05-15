@@ -14,7 +14,8 @@
 \contentsline {section}{\numberline {7}Historische Kontext}{22}{section.7}
 \contentsline {subsection}{\numberline {7.1}Ein englischer Landarzt}{22}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Von Jenner's Kuhpockenvaccination zur allgemeinen Impfpflicht}{23}{subsection.7.2}
-\contentsline {section}{\numberline {8}Abk\"urzungsverzeichnis}{32}{section.8}
-\contentsline {section}{\numberline {9}Literaturverzeichnis}{33}{section.9}
-\contentsline {subsection}{\numberline {9.1}Onlineartikel}{35}{subsection.9.1}
-\contentsline {section}{\numberline {10}Gedruckte Quellen}{36}{section.10}
+\contentsline {subsection}{\numberline {7.3}Von der Zellularpathologie zu den Antitoxinen}{28}{subsection.7.3}
+\contentsline {section}{\numberline {8}Abk\"urzungsverzeichnis}{31}{section.8}
+\contentsline {section}{\numberline {9}Literaturverzeichnis}{32}{section.9}
+\contentsline {subsection}{\numberline {9.1}Onlineartikel}{34}{subsection.9.1}
+\contentsline {section}{\numberline {10}Gedruckte Quellen}{35}{section.10}
