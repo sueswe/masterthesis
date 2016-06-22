@@ -1,0 +1,645 @@
+\documentclass[
+    a4paper,
+    12pt,
+    hyphens,
+    chapterprefix=true,
+    headheight=33pt,
+    footheight=29pt,
+    headings=optiontohead, % optionales Argument wird standardmäßig in Kopfzeile verwendet 
+]{scrartcl}
+
+\usepackage[latin1]{inputenc}
+\usepackage{ngerman}
+\usepackage{color}
+%\usepackage[]{footmisc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\definecolor{darkblue}{rgb}{0,0,.5}
+\usepackage{hyperref}
+%\def\UrlBreaks{\do\/\do-\do_\do.\do8\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z}{}
+\def\UrlBreaks{\do\/\do-\do_\do\_\do=\do\=\do&}
+\hypersetup{pdftex=true, colorlinks=true, breaklinks=true, linkcolor=black, menucolor=darkblue, urlcolor=black}
+\usepackage{url}
+% http://tex.stackexchange.com/questions/53962/why-are-urls-typeset-with-monospace-fonts-by-default
+\urlstyle{rm}
+\usepackage{etoolbox}
+\usepackage{geometry}
+\geometry{a4paper,left=30mm, right=30mm, top=3cm, bottom=3cm} 
+
+\usepackage[
+  headsepline,
+  footsepline,plainfootsepline,
+  automark,
+  ]{scrlayer-scrpage}
+ 
+%\automark{chapter} %scrbook
+\automark*{section}
+\clearpairofpagestyles
+\ohead{\headmark}
+\ofoot{\pagemark}
+
+%\KOMAoptions{onpsinit=\linespread{1}\selectfont}% Kopf- und Fußzeilen einzeilig
+%\ohead{\headmark}
+%\ofoot*{Seite \thepage\\} 
+
+% http://mirror.easyname.at/ctan/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+%Class scrartcl Warning: Usage of package `fancyhdr' together
+%(scrartcl)              with a KOMA-Script class is not recommended.
+%(scrartcl)              I'd suggest to use
+%(scrartcl)              package `scrlayer-scrpage'.
+%(scrartcl)              Nevertheless, using requested
+%(scrartcl)              package `fancyhdr' on input line 23.
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\lhead{\small{Katharina Süß, 0721216}}
+%\lhead{}
+%\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+%\rhead{\small{SE Die Macht der Bilder, SS 2013}}
+%\rhead{}
+%\chead{}
+%\lfoot{}
+%\cfoot{}
+%\rfoot{\small{\thepage}}
+%renewcommand{\headrulewidth}{0.4pt}
+%renewcommand{\footrulewidth}{0.4pt}
+
+\setlength{\skip\footins}{1.2cm}
+\pagenumbering{arabic}
+%\pagestyle{plain}
+\setlength{\parindent}{0cm}
+\linespread{1.5}
+
+\begin{titlepage}
+\title{
+\Huge{Impfen: Ja oder Nein? \\
+Eine historische Betrachtung der Impfdebatte des 18. und 19. Jahrhunderts im Vergleich zur Gegenwart
+}
+}
+\author{\\*[6cm]Katharina Süß, \\Matrikel-Nummer 0721216
+\\*[2cm]Konzept Master Arbeit
+}
+\date{}
+\end{titlepage}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+\tableofcontents
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Einleitung}
+
+\textit{Gesundheit}. Dem Volksmund gilt sie als das höchste Gut: \textit{Gesundheit und froher Mut, das ist des Menschen höchstes Gut}\footnote{Deutsches Sprichwort. 
+Vgl.: \url{http://www.aphorismen.de/suche?f_thema=Gesundheit&seite=2} 7.4.2016.}. "`Gesundheit"', ein auf den ersten Blick unscheinbares und einfach zu definierendes Wort.
+Omnipräsent im Europa des 21. Jahrhunderts, egal ob in Zeitungen, Versicherungen, Lebensmittelindustrie, Pharmaindustrie, Werbung oder via Internet, Pop-Up und Spam. Eine
+Google-Schlagwort-Suche'' bringt ein Ergebnis von sage und schreibe 180 Mio Treffern. \\
+Welch hohen Wert Gesundheit für Menschen, Staat oder Gesellschaft hat bezeugen in Österreich Institutionen wie das Sozialversicherungssystem und die verpflichtende
+Krankenversicherung für jedermann sowie die World Health Organisation (WHO) auf internationaler Ebene. Letztere zum Beispiel definiert Gesundheit als einen 
+\textit{''Zustand des vollständigen körperlichen, geistigen und sozialen Wohlergehens.''}
+\footnote{Verfassung der Weltgesundheitsorganisation vom 22.7.1946, Stand 8. Mai 2014, 
+S. 1. in: \url{https://www.admin.ch/opc/de/classified-compilation/19460131/201405080000/0.810.1.pdf} 6.4.2016.}\\
+1986 wird diese Definition im Rahmen der WHO Ottawa-Charta erweitert: \textit{''Gesundheit wird von Menschen in ihrer alltäglichen Umwelt geschaffen und gelebt: Dort wo sie spielen, lernen, arbeiten und lieben. Gesundheit entsteht dadurch, dass man in die Lage versetzt ist, selber Entscheidungen zu fällen und eine Kontrolle über die eigenen Lebensumstände auszuüben, sowie dadurch, dass die Gesellschaft, in 
+der man lebt, Bedingungen herstellt, die all ihren Bürgern Gesundheit ermöglicht.''}
+\footnote{WHO-Ottawa-Charta: \url{http://www.euro.who.int/__data/assets/pdf_file/0006/129534/Ottawa_Charter_G.pdf} 7.4.2016.}
+Die WHO betrachtet damit Gesundheit als etwas, für das Gesellschaft und Individuum gleichermaßen verantwortlich sind. So wundert es auch nicht, dass die WHO 1950 einen Weltgesundheitstag einführte, welcher alljährlich am 7.April begangen wird und mit dem auf Gesundheitsthema von globaler Relevanz aufmerksam gemacht werden soll. Der Weltgesundheitstag 2016 stand im Zeichen der Volkskrankheit \textit{Diabetes}.\footnote{Weltgesundheitstag: \url{http://www.weltgesundheitstag.de/cms/index.asp?inst=wgt-who&snr=11138&t=2016\%A7\%A7Diabetes} 7.4.2016.}\\
+\\
+Wenn Gesundheit also etwas ist, dass Individuum und Gesellschaft beeinflussen kann, nimmt es nicht wunder, dass dem Staat die allgemeine Gesundheit, also die "`Public Health"' besonders am Herzen liegt; nicht zu letzte deshalb, da die Versorgung vieler kranker Menschen den Staatshaushalt enorm belasten. Erreicht werden soll diese "`allgemeine Gesundheit"' mit Präventionsmaßnahmen. Das Wort Prävention entstammt dem lateinischen Verb "`praeveniere"' und bedeutet soviel wie "`verhindern"'
+\footnote{Gesundheitsprävention: http://www.aamp.at/unsere-themen/praevention/definition-praevention/ 15.4.2016.}. \textit{''Prävention zielt im Sinne von Krankheitsverhütung
+- anders als die Gesundheitsförderung - darauf, eine bestimmte gesundheitliche Schädigung oder Erkrankung durch gezielte Aktivitäten zu verhindern, weniger wahrscheinlich zu machen oder zu verzögern.''}\footnote{BMG Prävention: http://www.bmg.gv.at/home/Schwerpunkte/Gesundheitsfoerderung\_Praevention/ 15.4.2016.}\\
+Das österreichische Gesundheitssystem stellt seinen Bürgern dafür eine Vielzahl von Maßnahmen zur Verfügung,  wie etwa die Mammographie, Ernährungsberatung, den Mutter-Kind-Pass oder die 1974 in Österreich eingeführte allgemeine Vorsorgeuntersuchung, die dem frühzeitigen Erkennen von Herz-Kreislauf-, Stoffwechsel- oder Krebserkrankungen dient.\footnote{Vgl.: https://www.gesundheit.gv.at/Portal.Node/ghp/public/content/Die\_Vorsorgeuntersuchung\_LN.html 13.4.2016.} \\
+Als eine der ersten, und damit ältesten Präventionsmaßnahmen gilt wohl die Schutzimpfung vor Infektionskrankheiten. Das Bundesministerium für Gesundheit sieht in den Impfungen die heute "`wirksamste Prophylaxe"'\footnote{BMI Impfen: http://bmg.gv.at/home/Schwerpunkte/Gesundheitsfoerderung\_Praevention/Impfen/ 15.4.2016.} vor den so genannten ''Kinderkrankheiten''. Dem folgend gibt es seit 1997 in Österreich ein öffentliches Impfkonzept, welches es ermöglicht, alle in Österreich lebenden Kinder bis zum 15. Lebensjahr mit den für die öffentliche Gesundheit wichtigen Impfungen zu versehen. (WAS WAR DAVOR???) Aktuell bietet das Gesundheitsministerium zwölf kostenlose Impfungen an, die im Rahmen des Mutter-Kind-Passes oder von Schulimpfaktionen angeboten werden. Gemäß dem österreichischen Impfplan, erstellt und durch das nationale Impfgremium des BMG, sollen bereits bei Säuglingen im alter von drei Monaten die ersten Schutzimpfungen vorgenommen werden. Jedoch gibt es in Österreich, wie in den meisten anderen Ländern auch, keine Impfpflicht, sondern es handelt sich lediglich um Empfehlungen der zuständigen Behörde, entsprechend obliegt es jedem einzelnen sich \textit{für} oder \textsl{gegen} eine oder mehrere Impfungen, beziehungsweise die Impfung seiner Kinder, zu entscheiden.\\
+Diese auf den ersten Blick so unscheinbare Frage "`Impfen: ja oder nein?"' beinhaltet auf den zweiten Blick ungeahnte Tiefen, ja sie spaltet die Gesellschaft geradezu in zwei ''verfeindete'' Lager, die, wie es scheint, kaum miteinander zu versöhnen sind: nämlich jene der Impfgegner und jene der Befürworter. Ein Fakt, welcher dabei den wenigsten bekannt sein dürfte ist, dass diese Diskussion des Für und Wider von Schutzimpfungen keine allzu neue ist, sondern mindestens seit der Entwicklung und Institutionalisierung der Kuhpockenimpfung existiert.
+
+
+\section{Forschungsgebiet}
+\subsection{Worum es geht....}
+In der folgenden Master Arbeit soll genau diese Frage des "`Impfen: ja oder nein?"' im Zentrum stehen. Das Kerninteresse dabei liegt auf der geführten Debatte, wobei die Pro und Contra Argumente im historischen Verlauf in den Fokus gerückt werden.\\
+Die zentralen Forschungsfragen dafür lauten:\\
+\begin{itemize}
+\item{Wer führte und führt die Impfdebatte beziehungsweise wer beteiligt/e sich daran? Sind es ÄrztInnen, ist es der Staat, die Industrie, die Eltern?}
+\item{Wie wurde und wird die Debatte geführt? Zum Beispiel in Predigten, Zeitungen und Zeitschriften am Beginn und Film, Fernsehen und Internet in der gegenwärtigen Diskussion. Als jüngstes Beispiel wäre hier der im April 2016 erschienen Film von Andrew Wakefield\footnote{Britischer Arzt, veröffentlichte 1998 einen Artikel in der renomierten Zeitschrift "`The Lancet"', in dem er Autismus als Nebenwirkung der MMR-Impfung postulierte. Diese Theorie verfolgt er auch in seinem jüngst veröffentlichten Film "`Vaxxed"'. Der Artikel wurde von der Zeitschrift zurückgezogen und Wakefield mit einem Berufsverbot belegt. Vgl.: The Lancet, 1998 Feb 28;351(9103):637-41.} "`Vaxxed: From Cover-Up to Catastrophe"'.\\ Wird die Impfdebatte nüchtern oder emotional geführt? Diese Frage scheint sich auf den ersten Blick zu erübrigen, soll aber gerade wegen der vermeintlich offensichtlich einzigen Antwort im Hintergrund mitgedacht werden. Ist "`Debatte"' überhaupt das geeignete Wort, denn eine Debatte würde man gemäß Wörterbuch als ''gehobenes Streitgespräch'' definieren.}
+\item{Welche Pro und Contra Argumente wurden/werden von wem ins Feld geführt?}
+\item{Hat sich die Debatte im Laufe der Zeit verändert, wenn ja, in wie fern? Hier scheinen die Meinungen auseinander zu gehen, denn während das Forum Impfschutz in erster Linie von (Contra-)Argumenten ausgeht, die nicht neu sind,\footnote{Michael Kunze, Das österreichische Impfsystem und seine Finanzierung. Lösungsvorschläge für eine alternative Finanzierungsform, Wien, 2010, S. 6.} sieht der Medizinhistoriker Eberhard Wolff immense Unterschiede in der Impfdiskussion von damals und heute, vor allem wegen der strukturellen Verschiedenheit.\footnote{Eberhard Wolff, Einschneidende Maßnahmen. Pockenschutzimpfung und traditionale Gesellschaft im Württemberg des frühen 19. Jahrhunderts, Stuttgart, 1998, S?????.} }
+\end{itemize}
+
+Am Ende sollen die Fragen beantwortet und die Argumente mittels eines Vergleiches einander gegenübergestellt werden.\\
+\\
+Der zu Untersuchende zeitliche Rahmen ergibt sich aus dem Forschungsgegenstand selbst, da sich diese Arbeit die Aufgabe stellt, den gesamten Zeitraum der Impfdebatte zu betrachten, um ein möglichst vollständiges Bild davon zu erhalten. Damit beginnt die Arbeit mit der Einführung der Schutzimpfungen in die medizinische Praxis Ende des 18. Jahrhunderts, und geht über die Einführung der Impfpflichten bis in die Gegenwart. Die genau Geschichte der Schutzimpfung wird im Kapitel XXX historischer Kontext dargestellt.\\ 
+\\
+Hinsichtlich des geographischen Raumes steht grundsätzlich der deutsche Sprachraum im Fokus, hier vor allem Österreich und Deutschland mit den gegenwärtigen Staatsgrenzen. Allerdings müssen die entsprechenden Veränderungen der Hoheitsgebiete und Herrschaftsverhältnisse im Lauf des untersuchten Zeitraumes im Hintergrund mitgedacht werden. Befasst sich diese Arbeit doch mit einem Zeitalter der großen Umwälzungen; wie etwa die Auflösung des Heiligen Römischen Reiches, Gründung des österreichischen Kaisertums, die Umwälzungen der Napoleonischen Kriege, die Neuordnung Europas durch den Wiener Kongress, die Gründung des deutschen Kaiserreiches bis hin zum den beiden Weltkriegen des 20. Jahrhunderts, um nur die Großereignisse zu erwähnen.
+
+
+\subsection{Und worum nicht...}
+Auf Grund des Umfanges und der Aktualität des gewählten Themas, müssen entsprechende Einschränkungen und Abgrenzungen vorgenommen werden. Etwa bezüglich der Vielzahl der vorhandenen Impfmöglichkeiten werden hier ausschließlich jene gegen die ''klassischen Kinderkrankheiten'' wie Pocken, Mumps-Masern-Rötteln, Keuchhusten, Kinderlähmung, Diphtherie etc. betrachtet, wenngleich der Begriff der "`Kinderkrankheiten"' irreführend ist, da es sich um Infektionskrankheiten handelt, die jeden, gleich welchen alters, treffen können. Etwaige Reiseimpfungen wie Japan-Enzephalitis oder Gelbfieber werden hier nicht behandelt, da keine dieser Erreger im behandelten geographischen Raum auftreten, eine Immunisierung oft nicht permanent sein soll und nur für die Zeit der Reise notwendig ist.\\ 
+Festgehalten werden muss außerdem, dass diese Master Arbeit keine simple Auflistung aller pro und contra Argumente im Sinne eines Impfratgebers darstellt. Es geht also keinesfalls darum ob Impfungen sinnvoll, wirksam oder gefährlich sind. Entsprechend soll keine "`Missionierung"' für oder gegen Impfung stattfinden. Die medizinwissenschaftliche Entwicklung der Impfstoffe wird zwar im historischen Kontext am Rande thematisiert, steht aber ebenso wenig im Blickpunkt wie deren Inhaltsstoffe und die Frage nach der Verträglichkeit der einzelnen Bestandteile. Ebenso wird keine Bewertung der Argumente oder der Versuch der Bestätigung beziehungsweise Entkräftung derselben vorgenommen. \\
+
+\section{Forschungsstand}
+Grundsätzlich wurde das Thema Impfen seit seiner Einführung aus unterschiedlichsten Perspektiven und Blickwinkeln bearbeitet. Begonnen zum Beispiel bei Edward Jenner, der die Vaccination mit Kuhpocken in die medizinische Praxis eingeführt hat. Die erste Biographie über ihn erschien bereits 1838\footnote{John Baron, The Life of Edward Jenner, London, 1838.}. Über die Impfung selbst wurde ebenfalls bereits früh geschrieben. Man kann hier das Werk des oberösterreichischen Pfarrers Johann Evangelist Kumpfhofer\footnote{Johann Kumpfhofer, Predigt von der Pflicht der Eltern ihren Kindern die Kuhpocken einimpfen zu lassen, Linz, 1808.} nennen, oder 100 Jahre später das jenes von  Gustav Adolf Schlechtendahl\footnote{Gustav Adolf Schlechtendahl, Wahn oder Wirklichkeit? Vorurteil oder Wahrheit? Gedanken und Aktenstücke zur Frage der Schutzpocken-Impfung, Berlin, 1908.}. Eine andere, gegenwärtige Publikation ist jene von Marcus Sonntag\footnote{Markus Sonntag, Pockenimpfung und Aufklärung. Popularisierung der Inokulation und Vakzination. Impfkampagne im 18. und frühen 19. Jahrhundert, Bremen, 2014.}, der sich in seinem Werk mit dem Zusammenhang von Pockenimpfung und Aufklärung befasst. Bis hin zur Aufarbeitung der Geschichte der Pockenimpfungen in geographisch begrenzten Gebieten und aus unterschiedlichen Perspektiven, wie etwa bei Eberhard Wolff\footnote{Eberhard Wolff, Einschneidende Maßnahmen. Pockenschutzimpfung und traditionale Gesellschaft im Württemberg des frühen 19. Jahrhunderts, Stuttgart, 1998.}, welcher die Pockenimpfung in Württemberg aus Patientenperspektive betrachtet. Auch zu den frühen Anti-Impfbewegungen gibt es Beispiele zu nennen, wie die Dissertation von Caroline Marie Humm\footnote{Caroline Marie Humm, Die Geschichte der Pockenimpfung im Spiegel der Impfgegner, München 1986.}  oder das Buch von Martin Dings\footnote{Martin Dings (Hg.), Medizinkritische Bewegungen im Deutschen Reich, 1870 bis 1933, Stuttgart, 1996.} über die Medizinkritische Bewegungen im Deutschen Reich zeigt.\\
+Als jüngste Neuerscheinung zu dem Thema kann das Werk von Wolfgang Eckart\footnote{Wolfgang Eckart (Hg.), Jenner. Untersuchungen über die Ursachen und Wirkungen der Kuhpocken, Berlin, 2016.} genannt werden. Als jüngste Jenner-Biographie kann das Werk von Herve Bazin\footnote{Herve Bazine, The Eradiction of Smallpox. Edward Jenner and the First and Only Eradication of a Human Infectious Diseas, San Diego, 2000.} empfohlen werden.\\
+Somit ist auf Grund der langen Geschichte der Impfung ist die Literaturlage breit und umfassend. Entsprechend muss man hier große Vorsicht walten lassen, da wegen der kontrovers geführten Diskussion und den uneingeschränkten Publizierungsmöglichkeiten mittels Internet nicht jedes Werk wissenschaftlichen Standards entspricht. So werden in dieser Arbeit jene Literaturnachweise ausdrücklich gekennzeichnet welche als problematisch einzustufen sind, jedoch zur Veranschaulichung einiger Argumente herangezogen werden müssen, nicht zuletzt um die gesamte Bandbreite der Impfdiskussion darzustellen. Hier anzuführen sind im speziellen die Werke von Stefan Lanka und Karl Krafeld\footnote{Karl Krafeld, Stefan Lanka, Impfen - Völkermord im dritten Jahrtausend?, Stuttgart, 2003.}. Beide Autoren zählen zu den extremen Impfgegner, welche in erster Linie verschwörungstheoretisch argumentieren und zum Beispiel grundsätzliche, medizinische Tatsachen in Abrede stellen, wie etwa jene, dass es Viren gibt welche Krankheiten auslösen\footnote{Vgl. Preisausschreiben zum Beweis des Masernvirus: https://web.archive.org/web/20120329214816\\/http://www.klein-klein-verlag.de/Viren-|-Erschienen-in-2011/24112011-das-masern-virus-100000-euro-belohnung.html 29.1.2016.}. Der studierte Biologe Lanka erhielt zudem 2015 den wissenschaftlichen Schmähpreis "`Goldenes Brett vorm Kopf"' für seine Verleugnung der Existenz von Viren.\footnote{http://wien.orf.at/news/stories/2738165/ 29.1.2016.} 
+\\
+Ganz allgemein muss dieser Arbeit daher ein sehr ausführliches und exaktes Literaturstudium vorangehen. Ein mögliches Problem könnte dabei die Unterscheidung von medizinischen "`Hardfacts"' und pseudowissenschaftlichen Halbwahrheiten darstellen. Um diese Gefahr zu umgehen, wird eine Ärztin, zur Unterstützung befragt werden.\\
+
+\section{Quellen}
+Als Quellenbasis dienen zunächst die medizinhistorischen Werke zu den Themen Impfen sowie Kinder- und Infektionskrankheiten, welche sich in der Bibliothek der Medizinischen Gesellschaft OÖ befinden. Ergänzend dazu wird der Quellenbestand des Medizinhistorischen Institutes in Wien befragt. Einen weiteren Bestand an gedruckten Quellen könnte das k.k. Schutzpocken-Haupt-Institut Wiens darstellen, sofern Unterlagen dazu auffindbar sind.
+
+\section{Modernisierungstheorie}
+Die Modernisierungstheorie wurde in den 1950er Jahren von politisch motivierten Sozialwissenschaftlern formuliert und befasste sich in ihrer ursprünglichen Form mit der Entwicklungslogik neuzeitlicher Gesellschaften.\footnote{Thomas Mergel, Modernisierung, Pkt. 1, in: http://ieg-ego.eu/de/threads/modelle-und-stereotypen/modernisierung/thomas-mergel-modernisierung 24.1.2016.} Sie ist zurückzuführen auf das Bedürfnis nach einem allgemeineren, alternativen Sammelbegriff für die negativ konnotierten Konzepte jener Zeit, wie "`Europäisierung, Verwestlichung oder Zivilisierung"'.\footnote{Hans-Ulrich Wehler, Modernisierungstheorie und Geschichte, Göttingen, 1975, S. 11.} "`Modernisierung"' war dafür die attraktivste alternative Bezeichnung, da es sich um einen sehr vieldeutigen, in erster Linie positiv assoziierten Begriff handelte, welcher seither in den theoretischen und historischen Sozialwissenschaften intensiv verhandeltet wurde und wird. Unter dem Dach der "`Modernisierungstheorie"' versteht man jedoch keine einheitlich formulierte Theorie. Vielmehr sammelt sich unter diesem Stichwort ein Konglomerat an Überlegungen zu langwierigen wirtschaftlichen Entwicklungen, sozialen Erhebungen bis hin zu empirischen Untersuchungen der politischen Kultur.\footnote{Thomas Mergel, Modernisierung, Pkt. 2.} In der Nachkriegszeit war Modernisierung lange an eine bestimmte innere und äußere Situation des Staates als Zielvorstellung gebunden und galt im Grunde als Synonym für "`Amerikanisierung"'. Man dachte "`Modernisierung"' dabei als einen Prozess, bei welchem sich der Zustand einer Gesellschaft von Traditionalität befreien, Züge der Moderne annehmen und sich dabei bestimmter progressiver, unausweichlicher Prozesse wie Industrialisierung, Demokratisierung, Bürokratisierung und Säkularisierung bedienen würde. Markant war dabei das dichotome Gegenüberstellen von kategorisierter Modernität und traditionalem Gegensatz, wie etwa hohe Lebenserwartung in modernen versus geringer Lebenserwartung in traditionellen Gesellschaften.\footnote{Wehler, Modernisierungstheorie, S. 14--17.}\\
+Die Modernisierungstheorie verfügte über große Anziehungskraft, nicht zuletzt deswegen, weil sie eine Art "`Entwicklungsschablone"' für politische Handlungsrichtungen beinhaltete. Ebenso schnell geriet sie gerade dafür in die Kritik. Bis heute wird die Theorie diskutiert und verhandelt, wobei man sich im Verlauf der Forschung von Zielvorstellungen und davon abhängigen Entwicklungsprozessen gelöst hat hin zu einem neuen Konzept, worin Moderne sich selbst wahrnimmt, historisiert und reflektiert.\footnote{Thomas Mergel, Modernisierung, Pkt. 17.}\\
+\\ 
+Befasst man sich nun mit Themen aus der sozialhistorischen Sparte der Medizin, wird für die Modernisierungstheorie gerne auch der Begriff der "`Medikalisierungstheorie"' verwendet. Nur, was bedeutet Medikalisierung? Darunter versteht man jenen Prozess, bei welchem die menschliche Lebenswelt mehr und mehr in den Fokus der medizinischen Wissenschaft und des Staates gerät. Der Beginn dafür wird im 18. Jahrhundert gesehen, als der aufgeklärt-absolutistische Staat die Gesundheit, respektive Krankheit seiner Bürger als gesellschaftspolitisches Problem erkannte und sich darum annahm. Dies führte zu einer staatlich unterstützen und geförderten Professionalisierung und Monopolisierung des Ärzteberufes, was das Gesundheits- und Krankheitsverhalten der Bevölkerung maßgeblich beeinflusste und veränderte.\footnote{Francisca Loetz, Vom Kranken zum Patienten. ''Medikalisierung'' und medizinische Vergesellschaftung am Beispiel Badens 1750--1850, Stuttgart, 1993, S. 14--15.} Anfangs betrachtet man diesen Vorgang sehr einseitig, nämlich ausschließlich "`von oben nach unten"' und sah damit in der Medikalisierung einen Prozess, den Staat und Ärzte der Gesellschaft gegen deren Willen "`überstülpten"'. Dieser Aspekt der Theorie wurde bald einiger Kritik unterzogen und nicht zuletzt mit der vermehrt praktizierten Patientengeschichte setzte ein Perspektivenwechsel ein. Man kam zu dem Schluss, dass es sich bei der Medikalisierung um keinen einseitigen Prozess, sondern vielmehr um ein \textit{top down and bottom up} handelte. Demnach haben nicht Ärzte und Staat allein die Medikalisierung getragen, sondern auch die Bevölkerung war an diesem Prozess beteiligt und zwar in dem Sinne als die Menschen unter den, strukturbedingt, zur Wahl stehenden Heilverfahren jenes in Anspruch nahmen, von welchem sie sich am ehesten Erfolg versprachen.\footnote{Wolfgang U. Eckart, Robert Jütte, Medizingeschichte. Eine Einführung, Köln, 2007, S. 175.} Nachfrage und Angebot bedingen sich also vielmehr, als dass sie sich wie in der traditionellen Modernisierungstheorie ausschließen, beziehungsweise dichotom gegenüberstehen,\footnote{Marina Hilber, Institutionalisierte Geburt. Eine Mikrogeschichte des Gebärhauses, Bielefeld, 2012, S. 26.} was in weiterer Folge zu der Erkenntnis führte, dass sich Laienmedizin und akademische Medizinkultur kaum trennen lassen.\footnote{Eckhart, Medizingeschichte, S. 175--176.} Die Sozialhistorikerin Franziska Loetz plädiert daher dafür, eher von einer medizinischen Vergesellschaftung als von Medikalisierung als reinen Disziplinierungsprozess zu sprechen. Sie beruft sich dabei auf Georg Simmels \textit{Soziologie} und dessen Überlegung, \textit{dass Gesellschaft konstituiert wird durch die Handlungszusammenhänge, die zwischen ihren Mitgliedern entstehen}\footnote{Loetz, Vom Kranken zum Patienten, S. 15.}.\\
+Neben der bereits zitierten Studie von Francisca Loetz kann die Studie des Medizinhistoriker Eberhard Wolff über die Annahme und Ablehnung der Pockenimpfung, aus Patientenperspektive, ebenfalls als Beispiel für die Medikalisierungstheorie im Sinne der Vergesellschaftungsidee genannt werden. Wolff jedoch nimmt sich die umgekehrten Perspektive vor. Er nimmt nicht nur die Sicht des Patienten ein, sondern steckte die Rahmenbedingungen für das Konzept der Traditionalität ab und orientierte sich an kategorisierten Idealtypen, um Tendenzen aufzuzeigen. Damit wollte Wolff dem Begriff der Traditionalität den ausschließlich negativen Bezugsrahmen zur Modernität nehmen.\footnote{Wolff, Einschneidende Maßnahmen, S. 92.}\\
+\\
+Wie kann die Medikalisierungstheorie, als Aspekt der Modernisierungstheorie, nun in dieser Arbeit Anwendung finden? Als markante Stichwörter des bisher erläuterten können "`Prozess, beziehungsweise Entwicklung und Kategorien"' hervorgehoben werden. Betrachtet man die Geschichte der Schutzimpfung, kann man sagen, dass die Einführung der Pockenimpfung und die damit einhergehenden gesetzlichen Regelungen über allgemeine Impfpflichten zu jenen Maßnahme zählen, welche zu einer maßgeblichen Medikalisierung der Bevölkerung beigetragen haben:
+\begin{itemize}
+\item{Die impfbedingten Reglementierungen erweiterten nicht nur den Funktionsbereich der Ärzteschaft, sondern bezogen auch die ländliche Bevölkerung mit ein, welche davor tendenziell arztfern gelebt hatte.}
+\item{Erstes, wirksames und vor allen Dingen präventives Mittel gegen eine weit verbreitetet Infektionskrankheit mit hoher Todesrate.}
+\item{Die Impfung entspricht der zeitgenössischen, von der Aufklärung geprägten, Idee aus der Unmündigkeit herauszutreten und aktiv sein weltliches Schicksal in die Hand zunehmen.}
+\end{itemize}
+Auf dieser Basis lässt sich folgende These als Ausgangspunkt dieser Arbeit formulieren: Die Entdeckung, Einführung und Verbreitung der Pockenimpfung zog eine Welle von medizinwissenschaftlichen sowie medizin-hygienischen Erfindungen und Medikalisierungsmaßnahmen nach sich, welche das Gesundheits- und Krankheitsverhalten der Menschen maßgeblich veränderten. Dieser gesellschaftliche Wandel lässt sich anhand der Argumente der Impfdebatte belegen.
+
+
+\section{Methoden}
+\subsection{Interviews}
+Zum Vergleich der historischen Quellen ist, als Ergänzung der vorhandenen zeitgenössischen Literatur, die Durchführung von Interviews mit gegenwärtigen TeilnehmerInnen der Impfdebatte angedacht. Die Befragung soll offen und eher narrativ durchgeführt werden, damit die Befragten genug Spielraum haben, persönliche Meinungen und Sichtweisen zu kommunizieren.\\
+\\
+\textbf{Mögliche Interviewpartner:}
+\begin{itemize}
+\item{Kinderärzte und Hausärzte - beide für die Patientenaufklärung betreffend Impfung zuständig.}
+\subitem{Dr. Andrea Rotheneder, Allgemeinmedizinerin und Homöopathin, Linz. Führt Mutter-Kind-Pass Untersuchungen ausschließlich an ungeimpften Kindern durch.}
+\subitem{Dr. Marta Mayrhofer, Wilhering, Impfbefürworterin.}
+\item{Dr. Johannes Neugebauer, Impfreferent Ärztekammer OÖ, Kinderarzt Eferding.}
+\item{Dr. Gabriele Haring, Land OÖ Abt Kinder-Jugendheilkunde.}
+\item{Leonhard Prossliner, Schutzverein für Impfgeschädigte in Österreich, Obmann und vermutlich auch Gründer des Vereins, Vater eines Kindes mit Impfschäden.}
+\end{itemize}
+
+\textbf{Mögliche Fragen:}
+\begin{itemize}
+\item{Name, Beruf (Facharzt, NL, ...) und Aufgabengebiet}
+\item{Wie stehen Sie persönlich zum Thema Impfen?}
+\item{Führen Sie Impfungen durch? Wenn ja, welche?}
+\item{Wie funktioniert ein Aufklärungsgespräch mit Patienten?}
+\item{Welche sind die am häufigsten vorgebrachten Argumente von Impfkritikern bzw. -gegnern, mit denen Sie konfrontiert wurden?}
+\item{Wie gehen Sie damit um?}
+\end{itemize}
+
+\textbf{Weitere Überlegungen:}
+\begin{itemize}
+\item{Wie viele Personen sollen interviewt werden?}
+\item{Ein Problem könnte sein, nicht genügend Impfgegner, bzw. -skeptiker zu interviewen. Möglicherweise kann über Leonhard Prossliner Kontakt zu weiteren Impfgegnern/-skeptikern hergestellt werden.}
+\item{Sollen auch Apotheker, Pharmazeuten und Eltern zum Interview herangezogen werden?}
+\item{Gibt es bei den Interviews einen Unterschied zwischen Männern und Frauen sowie zwischen Wahl- und Kassenärzten?}
+\end{itemize}
+
+
+\subsection{Der Vergleich}
+Unter historischem Vergleich versteht man die Gegenüberstellung von zwei, drei oder mehreren historischen Einheiten, um sie auf deren Gemeinsamkeiten oder Unterschiede hin zu untersuchen. So ein Vergleich kann synchron oder diachron sein, sprich es werden die ausgewählten Sachverhalte entweder aus einer Epoche oder aber über unterschiedliche Zeiträume hinweg betrachtet. Ebenso kann er symmetrisch oder asymmetrisch sein, also die historischen Einheiten mit gleicher Intensität betrachten, oder aber einen Fall ins Zentrum stellen und auf den anderen nur einen kurzen Blick werfen.\footnote{Hartmut Kaelble, Historischer Vergleich: http://docupedia.de/zg/Historischer\_Vergleich?\\oldid=106431, 16.7.2015.} 
+Die Forschungspraxis des historischen Vergleiches, noch im 19. Jahrhundert von Historikern skeptisch betrachtet, erfreute sich in den letzten Jahren einer immer stärkeren Beliebtheit. Dies verwundert kaum, wenn man bedenkt, dass seine besondere Stärke gerade darin liegt, den Forscher dazu zu zwingen, die eigene Position und Fragestellung selbstreflexiv zu betrachten und zu relativieren. Er zeigt uns zudem mögliche Alternativen zu bislang als selbstverständlich oder herausragend betrachteten Entwicklungswegen auf.\footnote{Jakob Hort, Vergleichen, Verflechten, Verwirren. Vom Nutzen und Nachteil der Methodendiskussion in der wissenschaftlichen Praxis: ein Erfahrungsbericht, S. 324, in: Agnes Arndt u. a. (Hg.), Vergleichen verflechten, verwirren? Europäische  Geschichtsschreibung zwischen Theorie und Praxis, Göttingen 2011, S. 319--341.}  Als Besonderheit dieser Methode muss beachtet werden, dass bei einem Vergleich kein großes Phänomen in seiner ganzen, komplexen Totalität Beachtung finden kann, sondern dass der Untersuchungsgegenstand einer gewissen Selektion unterzogen werden muss.\footnote{Heinz-Gerhard Haupt, Jürgen Kocka, Historischer Vergleich: Methoden, Aufgaben, Probleme. Eine Einleitung, S. 23, in: Heinz-Gerhard Haupt, Jürgen Kocka (Hrg.), Geschichte und Vergleich. Ansätze und Ergebnisse international vergleichender Geschichtsschreibung, Frankfurt/Main, 1996. S. 9--46.} 
+So soll konkreter Untersuchungsgegenstand dieser Arbeit die Impfdebatte sein. Es geht damit nicht um die Frage nach Wirksamkeit oder Sinnhaftigkeit von Impfung, sondern tatsächlich um die Argumente der Diskussion. Da ein relativ breiter Zeitraum verglichen wird, nämlich das 18. und 19. Jahrhundert mit dem 20. und 21 Jahrhundert, handelt es sich um einen diachronen Vergleich. Der zeitliche Rahmen ergibt sich aus dem Untersuchungsgegenstand selbst, da die erste Impfung - die Kuhpockenimpfung - im 18. Jahrhundert entwickelt wurde. Bis in die Gegenwart hinein werden immer neue Impfstoffe entwickelt und auf den Markt gebracht. Es soll versucht werden, beiden Teilen der Debatte - Pro und Contra - gleichwertig, also symmetrisch zu begegnen. 
+
+\subsection{Qualitative Inhaltsanalyse}
+Die qualitative Inhaltsanalyse, basierend auf der Tradition der Hermeneutik, wurde in den 1980er vom Sozialwissenschaftler Philipp Mayring auf Grundlage der quantitativen Inhaltsanalyse der Kommunikationswissenschaften entwickelt. Die Methode zielt darauf ab, mittels Betrachteter Aussagen Rückschlüsse auf das zu analysierende Material zu gewinnen und dadurch zum Beispiel Absichten des Absenders oder Wirkungen beim Empfänger aufzuzeigen.\footnote{Philip Mayring, Qualitative Inhaltsanalyse. Grundlagen und Techniken, 12. Auflage, Basel, 2015, S. 12--13.} Es geht bei dieser schlussfolgernde Methode also um die umfassende Erfassung des Untersuchungsgegenstandes unter Berücksichtigung der Vielfalt und Komplexität der menschlichen Wirklichkeit.\footnote{Mayring, Inhaltsanalyse, S. 19--20.}\\
+Ausgangspunkt dafür muss eine theoretische Fragestellung sein, vor deren Hintergrund der Forschungsgegenstand ausgewertet wird. Untersuchungsgegenstand kann dafür jede Art von fixierter Kommunikation wie Interviews, Dokumente aber auch Bilder oder Musik sein. Es wird einerseits nach Themen und Gedankengängen als primären Inhalt und andererseits nach latenten Inhalten, welche durch Textinterpretation und Kontext erschlossen wird, untersucht.\footnote{Philipp Mayring, Qualitative Inhaltsanalyse, in: Forum: Qualitative Sozialforschung, Volume 1, No. 2, Art. 20, Juni 2000, o.A.}\\
+Der bereits zitierte Eberhard Wolff verwendete diese Methode in seiner Studie über die Pockenimpfung aus Patientenperspektive und brachte hierfür ein plakatives Beispiel: Hinter dem früher häufig angeführten Argument, dass Kinder nicht geimpft werden sollten, da die Eltern nicht in das Schicksal eingreifen wollten, scheint auf den ersten Blick religiöser Prädestinationsglaube zu stehen. Beim zweiten Blick auf den Kontext meint Wolff, unter Anwendung der qualitativen Inhaltsanalyse, die Scheu der Eltern zu erkennen, die nicht die Verantwortung für eine als riskant wahrgenommen Maßnahme übernehmen wollten.\footnote{Wolff, Einschneidende Maßnahmen, S. 50.}\\
+\\
+Ein besonderes Augenmerk legt die qualitative Inhaltsanalyse auf Sprache und Wortwahl. Sie versucht etwa relevante Textstellen nach Häufigkeit oder Gemeinsamkeiten bestimmter Inhalte auf einem selbst definierten Abstraktionsniveau zusammenzufassen. Die Methode sieht vor die Inhalte in Kategorien einzuteilen, zu definieren, Beispielen zuzuordnen und mit Kodierregeln zu versehen.\footnote{Philipp Mayring, Qualitative Inhaltsanalyse, in: Forum: Qualitative Sozialforschung, Volume 1, No. 2, Art. 20, Juni 2000, o.A.} Basierend auf den drei Grundformen der Interpretation, also \textit{Zusammenfassung}, \textit{Exiplikation} und \textit{Strukturierung}, wird dafür das Prozedere der induktiven oder deduktiven Kategorienentwicklung und -anwendung vorgeschlagen.
+
+\subsubsection{Ablaufmodell}
+Wie gestaltet sich nun die praktische Anwendung der qualitativen Inhaltsanalyse für diese Arbeit? Immer wieder betont Mayring in seinem Werk wie wichtig es ist, ein Ablaufmodell zu erstellen um die Intersubjektivität der Methode zu gewährleisten. Er bringt dafür einige Orientierungspunkte\footnote{Vgl.: Mayring, Inhaltsanalyse, S. 62 u. 98.}, an denen sich die Autorin der Arbeit orientiert hat:\\
+\\
+\textbf{Festlegung des Materials}: Für die Betrachtung der historischen Impfdebatte werden unterschiedliche Kommunikationskanäle herangezogen und untersucht: gedruckte Quellen, Sekundärliteratur, Interviews u. a.. Daneben sind auch so genannte indirekte Quellen zu erwarten, wenn zum Beispiel Impfgegner Argumente von Befürwortern aufgreifen, um diese zu entkräften und umgekehrt. Hier ergibt sich bereits die erste Einschränkung, weshalb die Methode nur in Teilaspekten zur Anwendung kommen kann, da die qualitative Inhaltsanalyse eine Begrenzung auf eine fixierte Art der Kommunikation vorsieht, während im Rahmen dieser Arbeit mehrere Arten betrachtet werden.\\
+\\
+\textbf{Analyse der Entstehungssituation}: "`Entstehungssituation"' bezieht sich hier einerseits auf jene des Materials und andererseits auf jene des Untersuchungsgegenstandes, nämlich der Impfdebatte. Dieser Aspekt wird bedingt, in erster Linie im Kapitel "`Historischer Kontext"' und dem Kapitel "`Auswertung und Kategorisierung der Interviews"' behandelt. Hier kommt es dahingehend zu einer Einschränkung, als dass die Entstehungssituation von Homepages, Filmen oder Zeitungsartikel nicht behandelt wird, da diese für den Forschungsgegenstand nicht primär relevant sind.\\
+\\
+\textbf{Formale Charakteristika des Materials}: Dieser Punkt betrifft Hauptsächlich die zu erforschenden gedruckten Quellen und wird im Kapitel "`Quellen"' erläutert.\\
+\\
+\textbf{Richtung der Analyse}: Betrachtet werden sollen die Argumente der Impfdebatte.\\
+\\
+\textbf{Theorie geleitete Hypothese}: Basierend auf den Erläuterungen des fünften Kapitels wurde die Arbeitsthese formuliert, dass die Entdeckung, Einführung und Verbreitung der Pockenimpfung eine Welle von medizinwissenschaftlichen sowie medizin-hygienischen Erfindungen und Medikalisierungsmaßnahmen nach sich zog, welche das Gesundheits- und Krankheitsverhalten der Menschen maßgeblich veränderten. Dieser gesellschaftliche Wandel lässt sich anhand der Argumente der Impfdebatte belegen.\\
+\\
+\textbf{Analysetechniken}: Zur Analyse sieht die Methode, wie bereits mehrfach erwähnt, die Einteilung in Kategorien vor. Nach bisheriger Betrachtung scheint es sinnvoll, drei Kategoriengruppen heranzuziehen. Dadurch werden einerseits die handelnden Personen, die jeweiligen Gruppen sowie die Argumente einteilbar. Für die Einteilung des Personenkreise und der Gruppen scheint eine deduktive Kategorienfindung sinnvoll. Sprich, die Kategorien werden auf Basis des Forschungsgegenstandes an das Material herangetragen. Für die Einteilung der Argumente erscheint die induktive Form der Kategorienbildung, aus der Textanalyse heraus, sinnvoll. Die Kategorien selbst werden im Folgenden erläutert. Hier muss abermals eine Einschränkung der Methode vorgenommen werden. Auf Grund der Offenheit der Fragestellung und der unterschiedlichen Kommunikationsarten die herangezogen werden, ist eine starre Kategorieneinteilung im Sinne der Methode nicht angebracht. \\
+\\
+\textbf{Interpretation in Richtung der Fragestellung}: Diese erfolgt im Zuge der einzelnen Kapitel sowie dem Vergleich und dem Fazit, mittels welchem die Forschungsfragen beantwortet werden sollen.
+
+\subsubsection{Kategorien}
+Unter der bisherigen Betrachtung erscheinen folgende Kategorien als sinnvoll:\\
+\\
+\textbf{Personenkreis}:
+\begin{enumerate}
+	\item{akademische Medizin: jene Personen, welche ein Medizinstudium abgeschlossen haben.}
+  \item{medizinisches Personal: jene, welche eine (heute) staatlich anerkannte medizinische Ausbildung durchlaufen haben (Pflegepersonal, Heilpraktiker, etc.)}
+  \item{akademische Naturwissenschaften: Personen mit einem naturwissenschaftlichen Studium wie Biologie, Pharmazie, etc.}
+  \item{medizinische Laien: Menschen, welche keine medizinische Ausbildung durchlaufen haben.}
+\end{enumerate}
+
+\textbf{Gruppen}:
+ \begin{enumerate}
+   \item{\textbf{Gegner} lehnen Impfungen von Grund auf ab und argumentieren mit Alternativmedizin, anthroposophisch, esoterisch, pseudowissenschaftlich bis hin zu dogmatisch-verschwörungstheoretisch.}
+  \item{\textbf{Skeptiker} lehnen Impfungen nicht grundsätzlich ab, sondern meist nur Einzelaspekte, wie den vorgegebenen Zeitpunkt.}
+  \item{\textbf{Befürworter} erachten Schutzimpfungen grundsätzlich als sinnvoll.}
+ \end{enumerate}
+
+Zur Einteilung der Argumente stellt sich zunächst die Frage, was ist eigentlich ein Argument? Das Wort selbst stammt vom lateinischen \textit{arguemtnum} ab und bedeutet etwas beweisen, erhellen.\footnote{Vgl.: http://www.duden.de/rechtschreibung/Argument 26.4.2016.} Sinn oder Ziel einer Argumentation ist es, den Adressaten von der Wahrheit oder Falschheit einer Aussage, eines Gegenstandes zu überzeugen. Im höchsten Idealfall wird die Argumentation beim Gegenüber zu einer permanenten Einstellungsänderung führen.\footnote{Argument: http://www.ejka.org/de/content/wie-ist-eine-gute-argumentation-aufgebaut 26.4.2016.} \\
+Sprachwissenschaftlich gesprochen besteht ein gutes Argument immer aus drei Teilen: Zunächst die \textit{Behauptung}. Diese beinhaltet eine Aussage und besteht meist aus einem Satz.\\
+Beispiel: Impfungen sind grundsätzlich schlecht/gut. \\
+Als nächstes folgt die \textit{Begründung}, die mehrere Sätze lang sein kann und durch Ausführungen die Behauptung belegen soll und beinhalten meist Wörter wie "`weil, da, zumal, ..."'.\\
+Beispiel: Weil einige Bestandteile des Impfstoffes schädlich für den menschlichen Körper sind. Weil die Krankheit harmlos ist und es damit nicht nötig ist, das Risiko von Impfschäden in kauf zu nehmen. Eine durchgemachte Krankheit stärkt zudem das Immunsystem auf natürlichem Weg. Eine durchgemachte Masernerkrankung schwächt das Immunsystem auf längere Zeit hinweg. Selbst wenn man eine Masernerkrankung gut übersteht, ohne dabei eine Epidemie auszulösen, besteht immer das Risiko von gefährlichen Folgeerkrankungen wie etwa SSPE, eine entzündliche Gehirnerkrankung die absolut tödlich ist. \\
+Zu guter Letzt wird noch ein \textit{Beispiel} angeführt. Dabei sollten persönliche Erlebnisse, wissenschaftliche Studien oder sonstiges die vorangegangen Argumentationskette verständlich machen.
+Beispiel: Ich habe diese Krankheit selbst erlebt und gut überstanden auch ohne Impfung. Eine Studie belegt, dass das Risiko von Impfschäden höher als der nutzen derselben ist. Es gibt keinen Beweis für die Wirkung einer Impfung. Studien belegen, dass die SSPE Rate seit der Einführung der Impfung gesunken ist. Die Tetanusimpfung hat unzähligen Soldaten des ersten Weltkrieges das Leben gerettet. 
+
+
+\textbf{Argumente}
+\begin{enumerate}
+	\item {Historische Argumente}
+  \item{Ökonomische Argumente}
+  \item{Medizinische Argumente}
+  \item{Gesellschaftlicher Nutzen/Gefährdung}
+  \item{Fanatische, verschwörungstheoretische Argumente}
+\end{enumerate}
+
+\section{Historische Kontext}
+Befasst man sich mit einem Thema wie der Impfdebatte, muss zunächst der historische Kontext abgesteckt und erläutert werden. Natürlich kann an dieser Stelle unmöglich eine vollständige Medizingeschichte vom 18. Jahrhundert bis zur Gegenwart, inklusive der problematischen Rolle der Medizin im Nationalsozialismus, beschrieben werden. Dies würde den Rahmen des Möglichen bei weitem sprängen. Entsprechend werden nur jene medizinhistorischen Abschnitte in Auszügen beschrieben, welche für die Geschichte des Impfens wesentlich sind, wie etwa die Entwicklung der Bakteriologie oder der Serologie. Einige Aspekte wie etwa die Veränderungen in der Betrachtung von Krankheiten oder die Entwicklung der Hygiene sind für die Impfgeschichte grundsätzlich relevant, können jedoch nur am Rande erwähnt werden. Daneben muss festgehalten werden, dass bei den hier herausgegriffenen Aspekten kein Anspruch auf Vollständigkeit gestellt wird. 
+
+\subsection{Ein englischer Landarzt}
+Ein Name, welcher in Verbindung mit dem Impfthema immer auftaucht und den vermutlich jeder kennt, ist: \textit{Edward Jenner}. 
+Einigen gilt er als der "`Vater der Immunologie"' (FN????), in jedem Fall aber als Erfinder der Impfung.\\
+Wer war nun dieser berühmte, gleichsam hoch gelobte und vielfach umstrittene Edward Jenner? \\
+Geboren wurde er am 17. Mai 1749 in Berkely, Gloucestershire, als achtes von neun Kinder.\footnote{Edward Jenner: http://www.jennermuseum.com/the-man.html 28.4.2016.} Nach dem Schulbesuch ging er mit 13 Jahren bei einem Chirurgen in die Lehre. Mit 21 Jahren, nach Beendigung dieser Ausbildung, zog er nach London, wo er am St. Georg´s Hospital Schüler von John Hunter\footnote{Englischer Arzt und Chirurg, gilt als Begründer der Pathologie und der experimentellen Chirurgie sowie als Vorreiter auf dem Gebiet der vergleichenden Anatomie. Vgl.: Calixte Hudemann-Simon, Die Eroberung der Gesundheit 1750--1900, Frankfurt, 2000, S. 14.} (1728--1793) wurde.\footnote{Edward Jenner, Enxyclopaedia Britannica: http://www.britannica.com/biography/Edward-Jenner 8.3.2016.}.\\
+1773, mit 23 Jahren, kehrte er in seine Heimatstadt zurück, wo er eine Praxis eröffnete und sich als Landarzt etablierte. Später kamen noch zwei weitere Praxen in London und Cheltenham dazu.\\
+Jenner war in jedem Fall "`ein Kind seiner Zeit"' und entsprechend vielseitig begabt. Er musizierte, schrieb Verse, befasste sich mit Naturwissenschaften, stellte Beobachtungen an und sammelte Proben für John Hunter, mit dem er bis zu dessen Tod 1793 in Kontakt blieb.\footnote{Edward Jenner, Enxyclopaedia Britannica: http://www.britannica.com/biography/Edward-Jenner 8.3.2016.}\\
+1788 ehelichte er Catherine Kingscote. Aus dieser Verbindung gingen drei Kinder hervor: 1789 der älteste Sohn Edward, den er als einen der ersten Kleinkinder mit Kuhpocken impfte. Er starb 1810 an Tuberkulose. 1794 wurde die Tochter Catherine und 1797 der zweite Sohn Robert Fitzhardinge geboren. Seine Frau Catherine, starb 1815, ebenfalls an Tuberkulose. Edward Jenner verschied am 26. Jänner 1823, vermutlich an einem Schlaganfall, im Alter von 73 Jahren.\footnote{Edward Jenner: http://www.jennermuseum.com/later-years.html 28.4.2016.}
+
+\subsection{Von der Kuhpockenvaccination zur allgemeinen Impfpflicht}
+Im Jahr 1798 publizierte Edward Jenner sein Werk mit eher harmlos anmutenden Titel: \textit{An Inquiry into the Causes and Effects of Variolae Vaccinae, a Disease Discovered in some of the Western Counties of England, Particularly Gloucestershire, and Known by the Name of The Cow Pox}.\\
+\\
+Die Pocken oder Blattern, eine schwere und hoch ansteckende Infektionskrankheit, begleiteten die Menschen seit je her. Im 18. Jahrhundert gehörte diese Krankheit, wenngleich gefürchtet, zum alltäglichen Leben dazu. Wenngleich Zahlangaben aus jener Zeit mit Vorsicht zu betrachten sind, so wird heute angenommen, dass sich durchschnittlich acht von zehn Personen ansteckten und einer unter sieben starb. Vor allem unter Kleinkindern zählten sie zu den Haupttodesursachen.\footnote{Hudemann-Simon, 
+Eroberung der Gesundheit, S. 199.} All jene, welche die Pocken überlebten, mussten mit schweren Folgeerkrankungen, von Narben bis hin zu körperlichen oder geistigen Behinderungen rechnen. Vielen unbekannt ist vermutlich, dass Jenner seine Patienten bereits mit Hilfe der \textit{Variolation} zu schützen versuchte. Bei diesem Vorgang injezierte man einem gesunden Menschen das Pockensekret eines erkrankten mit leichterem Verlauf. Der betroffene erlitt im Idealfall einen milden Krankheitsausbruch und war dadurch für kommende Pockeninfektionen immunisiert. Wo der Ursprung der Methode liegt, kann nicht genau bestimmt werden, sicher ist jedoch, dass Lady Mary Wortley Montagu (1689--1762), die Frau des britischen Botschafters im Osmanischen Reich, die Variolation in England populär machte.\footnote{Eckart, Jenner, S. 1--2.} Obwohl in England ebenso wie in Teilen Europas praktiziert, konnte sich die Variolation nie ganz durchsetzten, blieb sie doch steht's riskant: Es bestand immer die Gefahr eines schwereren Verlaufes und oder gar einer Epidemie.\footnote{Eckart, Jenner, S. 3.}\\
+In einigen ländlichen Regionen Europas haben die Menschen jedoch beobachtet, dass Personen, welche einmal die Kuhpocken durchlitten hatten, nicht mehr, oder nur leicht, an den Menschenpocken erkrankten. Obwohl gerne behauptet, war Edward Jenner damit keines Wegs der erste, der um die Schutzwirkung der leichteren Kuhpocken beim Menschen wusste, dies gehörte viel eher zum so genannten "`bäuerlichen Erfahrungswissen"'. Für den deutschsprachigen Raum etwa ist für die 1760er Jahre die bewusste Übertragung der Kuhpocken auf den Menschen zum Schutz vor drohenden Pockenepidemien nachweisbar. Vergleichbare Handhabungen sind auch in England belegt, etwa durch den Wundarzt Nosh, der 1781 gezielt damit begann, Kinder mit den Kuhpocken zu infizieren um sie für die Blattern zu immunisieren.\footnote{Eckart, Jenner, S. 3.} \\
+Man kann an dieser Stelle also festhalten: Das Revolutionäre an Jenners Leistung war weniger die Erkenntnis um die Wirkung der Kuhpocken auf den Menschen, als vielmehr sein Vorgehen, mittels einer Versuchsreihe und Experimenten diese These unter Beweis zu stellen, seine Ergebnisse zu veröffentlichen sowie die Erkenntnis, dass die Krankheit nicht nur von Tier auf Mensch, sondern auch von Mensch zu Mensch übertragbar ist.\footnote{Details über den Verlauf der Experimente nachzulesen bei Wolfgang Eckart (Hg.), Jenner. Untersuchungen über die Ursachen und Wirkungen der Kuhpocken, Berlin, 2016.} Ebenfalls betont werden muss, dass Edward Jenner seine Versuche direkt am Menschen durchführte und diese nicht nur mit Kuhpocken, sondern danach mit Menschenpocken infizierte und setzte sie einem im Grunde unkalkulierbarem Risiko aus. Dieses Vorgehen wurde bereits von Jenners Zeitgenossen als ethisch problematisch angesehen! \footnote{Eckart, Jenner, S. 4.} Nichts desto trotz verbreitete sich die Kuhpockenimpfung verhältnismäßig rasch nach der Publikation, ermöglichte diese neue Methode bei korrekter Ausführung erstmalig eine relativ sichere, aktive und vor allem präventive Maßnahme gegen eine Krankheit, der man bis dahin mehr oder minder hilflos ausgeliefert war. Aber nicht nur Ärzte nahmen diese neue, vielversprechende Methode positiv auf, sondern auch Staatsoberhäupter und "`Behörden"'. Auch im Habsburgerreich traf die Vaccination auf große Begeisterung und 1799 wurde in Niederösterreich die erste Kuhpockenimpfung durch den Protokmedikus Paskal Joseph Ferro (1753--1809) vorgenommen. Ferro impfte dazu seine eigenen drei jüngsten Kinder im Alter von 19 Monaten bis vier Jahren.\footnote{Heinz Flamm, Chritian Vutuc, Geschichte der Pocken-Bekämpfung in Österreich, S. 266, in: Wiener klinische Wochenschrift, Heft 122, Wien, 2010, S. 265--275.} In der Habsburgermonarchie versuchte man zunächst die Menschen vom Gewinn der Methode zu überzeugen, bald kam es jedoch zu einem indirekten Impfzwang, indem man etwa die Aufnahme in öffentlichen Lehranstalten ebenso wie in Waisenhäusern oder die Gewährung von Stipendien von einem Impfnachweis abhängig machte. Dies erschien den zuständigen Behörden offenbar, in Anbetracht des Widerstandes der Bevölkerung, als angebracht. Denn vor allem im ländlichen Raum stand man der neuen Maßnahme aus vielerlei Gründen durchaus skeptisch gegenüber. Dass die Vaccination überwiegend von wissenschaftlichen Ärzten durchgeführt wurde, denen gegenüber man ohnehin sehr misstrauisch war, tat ihr übriges. 1836 wurde schließlich eine umfassende "`Vorschrift über die Kuhpocken-Impfung in den kaiserl. königl. Staaten"' erlassen. Ergänzt wurde dieser Erlass 1840 um eine Notimpfung aller ungeimpften sowie einer Impfauffrischung im Falle einer Epidemie.\footnote{Flamm, Vutuc, Geschichte der Pocken-Bekämpfung in Österreich, S. 269.} In dieser ersten "`Impfempfehlung"' war die allgemeine Vaccination von Kindern ab der 8. Lebenswoche, in jedem Fall binnen des ersten Lebensjahres vorgeschrieben.\footnote{Ingomar Mutz, Diehter Sportk, Geschichte der Impfempfehlungen in Österreich, S. 94, in: Wiener Medizinische Wochenschrift, Heft 157/5, Wien, 2007, S. 94--97.}\\
+Wie rasch sich die Kuhpockenimpfung in der Welt verbreitete, belegen die allerorts zeitnah eingeführten Impfgesetze, welche bei Strafe eine verpflichtende Impfungen der Bevölkerungen vorsahen. Als eine der ersten in Europa erließ das Königreich Bayern ein solches Gesetz 1807. Russland folgte 1812, Großbritannien 1853 und das deutsche Reich 1874, unmittelbar nach dessen Gründung.\footnote{Eckart, Jenner, S. 12.}\\
+\\
+An dieser Stelle lohnt es sich ein kurzer Blick hinter diese Gesetzesentwürfe zu werfen, stecken dahinter doch einige historisch bedeutende Entwicklungen: Denn damit wurden Prozesse bedingt, welche auf den ersten Blick nicht von Bedeutung erscheinen, tatsächlich aber Auswirkungen bis in unsere Zeit haben und zwar im Sinne der Medizin als "`Public Health"'. Denn die Pflichtimpfung gilt als eine der ersten Maßnahmen, die in einem bisher unbekannten Ausmaß die gesamte Bevölkerung mit den universitären Ärzten in Berührung brachte. Weder davor, noch danach gab es ein vergleichbares Gesetz, wodurch der Staat seiner Bevölkerung eine medizinische Maßnahme verpflichtend aufoktroyierte.\footnote{Eckart, Jenner, S. 19.} Diese staatliche "`Zwangsbeglückung"' zählt als weiterer großer Schritt dahingehend, dass der Staat die Medizin "`in seinen Dienst nahm."' Dies fußte auf der Idee des aufgeklärten Absolutismus des 18. Jahrhunderts, in welchem der Fürst, als Diener des Staates, durch sein Handeln die Wohlfahrt, Macht und Stärke seines Herrschaftsgebietes vermehren und sichern sollte. Dazu gehörte es nunmehr auch, dass sich der Herrscher um den Gesundheitszustand seiner Bevölkerung sorgte und staatliche Maßnahmen zu dessen Erhalt oder Wiederherstellung traf. Es ging in erster Linie darum, den unteren Bevölkerungsschichten, die sich zunehmend in Manufakturen 
+und städtischen Ballungszentren befanden, den Zugang zur medizinischen Versorgung zu ermöglichen. In Zeiten des Merkantilismus geschah dies freilich weniger aus 
+karitativen Gesichtspunkten, sondern vielmehr aus ökonomischen Überlegungen.\footnote{Wolfgang U. Eckart, Geschichte der Medizin, 2. Auflage, Berlin, 1994, S. 201--203.} Dadurch kam es zum einen zu der bereits in Kapitel XY erläuterten Medikalisierung der Patienten. Andererseits bedingte dies unter anderem eine Veränderung des ärztlichen Berufsbildes im Sinne einer Professionalisierung insgesamt, einer verbesserten sozialen Stellung und wachsendem Standesbewusstsein.\footnote{Eckart, Geschichte der Medizin, S. 212.} Des weiteren gelten diese frühen Ideen einer öffentlichen Gesundheitspflege, damit zusammenhängende medizinalpolizeiliche Vorstellungen des 18. Jahrhunderst sowie die Ideen der diätetisch-physikalischen Chemie als Grundlage für die Entwicklung einer wissenschaftlichen Hygiene, welche vor allem im 19. Jahrhundert zu entscheidenden Entdeckungen führte (Asepsi, Antisepsis u. a.).\footnote{Eckart, Geschichte der Medizin, S. 231.}\\
+\\
+Dennoch, wie kontrovers dieses Vorgehen der Pflichtimpfung bereits von Zeitgenossen aufgenommen wurden, belegen wohl nicht zuletzt die zahlreichen Gründungen von nationalen Anti-Impfverbänden, die einerseits die Impfung per se für unnötig oder gefährlich hielten, andererseits den mittels Gesetz ausgeübten Zwang zu bekämpfen suchten, da sie darin eine Einschränkung der persönlichen Freiheit sahen.\footnote{Eckart, Jenner, S. 19.} Wie erfolgreich die Impfgegner in einigen Ländern waren, belegt ein 1898 in Großbritannien erlassenes Mandat, wonach es möglich war, eine Befreiung der 1853 eingeführten Impfpflicht zu erlangen, wenn man diese aus Gewissensgründen ablehnte (\textit{conscientious objection}.)\footnote{Dorothy Porter, Roy Porter, The politics of Prevention: Anti-Vaccinationism and Public Health in nineteenth-century England, S. 234, in: Medical History, Heft 32, o. A., 1988, S. 231--252.} Diese von Impfgegnern vorgebrachten Ängsten stehen jedoch nicht unberechtigt im Raum. Zum einen war noch nicht geklärt, wie der Prozess der Immunisierung durch Schutzimpfung eigentlich funktionierte, zum anderen dauerte es nicht lange, bis es zu ersten Komplikationen im Zuge der Vaccination kam. Diese wurden zum Beispiel herbeigeführt durch die Vielzahl an Personen die die Impfung durchführten und dabei nicht exakt dem vorgesehen Prozedere folgten. Weiters war es nicht leicht, das Serum zu gewinnen oder zu transportierten. So kam es zum Beispiel zu Verunreinigungen und sogar zu Vermischungen der Kuhpockenviren mit dem Menschenpockenvirus. Ebenso wurde zu Beginn direkt von Mensch zu Mensch geimpft, was bedingt durch mangelnde Hygiene zu direkten Krankheitsübertragungen zum Beispiel von Syphillis führte. Das Problem konnte erst damit behoben werden, als man begann ausschließlich von Kuh zu Mensch zu impfen.\footnote{Edward Jenner, Enxyclopaedia Britannica: http://www.britannica.com/biography/Edward-Jenner 8.3.2016.}
+
+
+\subsection{Von der Zellularpathologie zu den Antitoxinen}
+Im 19. Jahrhundert kam es zu grundlegenden gesellschaftlichen Veränderungen. Die technisch-industrielle Revolution und die 
+allmähliche Entstehung von industriellen Produktionsprozessen lockte die durch diverse Krisen in Not geratene 
+Landbevölkerung mehr und mehr in die Stadt. Dies führte zusehends zu so genannten Ballungszentren. Darin herrschenden 
+dramatische Zustände, bedingt durch Überbevölkerung, Hungersnöte und hygienische Missstände, begünstigten die 
+epidemische Verbreitung von Infektionskrankheiten mit hohen Todesraten: Diphtherie, Tuberkulose, Typhus und natürlich 
+an ob erster Stelle die Cholera. Dies führte einerseits zu den frühen \textit{Sanitary Movments}\footnote{Hygienebewegung, 
+zunächst ausgehend von England und den Ideen des Rechtsanwalts Edwin Chadwick (1800--1890). Epidemische Krankheitsausbrüche 
+in Großstädten waren ein wesentlicher Ansporn für öffentliche Gesundheitsmaßnahmen durch staatliche Stellen. Es folgte die 
+schrittweise Institutionalisierung des öffentlichen Gesundheitswesen, wie bereits angedeutet. Nachzulesen etwa bei: Roy Porter, 
+Die Kunst des Heilens. Eine medizinische Geschichte der Menschheit von der Antike bis heute, Berlin, 2000, S. 413 ff. oder 
+Historiy of public health: \url{http://priory.com/history_of_medicine/public_health.htm} 15.5.2016.}, andererseits aber auch zur 
+zunehmenden naturwissenschaftlichen Erforschung von deren Ursachen, woraus sich die Bakteriologie entwickelte.\\
+Am Beginn der Bakteriologie, der prägenden medizinischen Leitidee des 19. Jahrhunderts, stand wohl Rudolf Virchow (1821--1902). 1858 veröffentlichte er seine revolutionäre Forschung, worin er eine neue Krankheitslehre begründete, nach der alle Krankheiten des Organismus auf die Veränderung einer Körperzelle zurückgeführt werden können. Dieser Lehrsatz, der im Grunde bis heute gültig ist, löste unter anderen die noch vorhandene neohumoralistischen Auffassungen ab. Grundgedanke der Bakteriologen war die nicht ganz neue Idee, dass Krankheiten durch Mikroorganismen hervorgerufen wurden und nicht etwa spontan entstanden.\footnote{Porter, Die Kunst des Heilens, S. 431.}\\
+Der Chemiker Louis Pasteur (1822--1895) und der Mediziner Robert Koch (1843--1910) gelten wohl als deren Berühmtesten Vertreter. Im Jahr 1878 stellte Pasteur an der französischen Academie de Medicine offiziell seine Infektionstheorie vor: Er war, gemeinsam mit zwei weiteren Forschern zu der Überzeugung gekommen, dass Mikroorganismen Gärung, Fäulins und Krankheiten auslösten, dass jeweils ein Organismus eine Krankheit auslöse und man dieser durch einen entsprechenden Impfstoff (analog den Pocken) vorbeugen konnte. Bereits 1879 stellte er seine Theorie mittels der Untersuchungen der Geflügelcholera und dem Milzbrand erfolgreich unter Beweis.\footnote{Porter, Die Kunst des Heilens, S. 437.}\\
+Pasteurs deutschem Kontrahenten Robert Koch gelang der Beweis dafür, dass jeder Krankheit einem eigenen Erreger zuzuordnen ist.\footnote{Hudemann-Simon, Eroberung der Gesundheit, S. 22--23.} Aus seiner gesammelten Forschung zog er folgendes, bis heute gültiges Erreger-Postulat\footnote{Eckart, Geschichte der Medizin, S. 236.}:
+\begin{itemize}
+\item{ein Erreger muss mikroskopisch Nachweisbar und identifizierbar sein}
+\item{er kann isoliert und in Reinkultur gezüchtet werden}
+\item{eine Überimpfung führt zu mit der Grundkranhit identen Krankheitszeichen}
+\item{der Erreger kann im überimpften Organismus erneut auf diese Weise nachgewiesen werden}
+\end{itemize}
+Von da an folgten die bakteriologischen Entdeckungen Zug um Zug: 1879 die Entdeckung des Erregers für Wundfieber, 1882 jener der Tuberkulose. 1883 wies Koch das Cholerabakterium im menschlichen Darm nach und belegte, dass dieses hauptsächlich in verschmutzen Wasser lebte. 1885 die erste erfolgreiche Tollwutimpfung, der nächste Meilenstein der zum Verständnis über die Wirkung von Impfungen beitrug.\footnote{Hudemann-Simon, Eroberung der Gesundheit, S. 22--23.} In Österreich stand man dieser neuen ausgesprochen aufwendigen Methode skeptisch gegenüber. Zunächst wurde Anton Ritter von Frisch (1848-1917, Vorstand Chirurgische Abteilung der Allgemeinen Poliklinik Wien) zu Pasteur gesendet um das Verfahren zu erlernen. Von Frisch äußerte sich nach eigenen Versuchsreihen zunächst skeptisch und schließlich negativ über das Verfahren. Auf Grund dessen entschied der Oberste Sanitätsrat (OSR) eine abwartende Haltung einzunehmen, was dazu führte, dass sich die k.k. Regierung und das Abgeordneten Haus gegen die Einrichtung einer allgemeinen Tollwutimpfstelle in Wien aussprach. Die Bewilligung einer derartigen Schutzimpfanstalt in einem Wiener Krankenhaus erfolgte erst 1894, nachdem sich die Zahl der Tollwutfälle in den umliegenden Kronländern epidemieartig anstiegen.\footnote{Heinz Flamm, Pasteurs Wut-Schutzimpfung - vor 130 Jahren in Wien mit Erfolg begonnen und doch offiziell abgelehnt, in: Wiener Medizinische Wochenschrift, Heft 165, Wien, 2015, S. 322--339.} \\
+Diese Welle an kurz aufeinanderfolgenden Entdeckungen schürten die Hoffnung auf eine ebenso rasche Entwicklung an Heilmitteln, schien die Angelegenheit dank der neuen Methoden gerade zu einfach zu sein: Isolation des krankheitserregenden Mikroorganismus und Entwicklung eines dazu passenden Impfstoffes. Doch neben den zahlreichen Erfolgen gab es auch dramatische Rückschläge, wie etwa das 1890 von Koch entwickelte Tuberkulin. Ohne das Mittel auf tatsächliche Wirksamkeit oder Sicherheit zu prüfen, wurde es in der Öffentlichkeit freudig begrüsst und binnen eines Jahres erhielten tausende Menschen eine Behandlung damit. Die Enttäuschung war entsprechend groß als man feststellte, dass es nicht das erhoffte Wundermittel war, im Gegenteil für Patienten mit Lungentuberkulose sogar gefährlich sein konnte.\footnote{Porter, Die Kunst des Heilens, S. 441--445.}
+\\
+Als Beginn der Ära der Serumtherapie gilt das von Emil von Behring (1854--1917), Shibasaburo Kitasato (1852--1931) und 
+dessen Mitarbeitern entwickelte Mittel gegen Diphterie und in weitere Folge gegen Tetanus. Behrings Ausgangsidee war, 
+dass es gelingen müsste, die Erreger von Infektionskrankheiten mit Gegengiften (Antitoxien) zu bekämpfen, die der Körper 
+im Rahmen der Abwehrreaktion selbst herstellt.\footnote{Wolfgang U. Eckart, Der Beginn der Ära von Serumtherapie und Impfung, 
+in: Ärzte Zeitung, Heft 48, 2004, S. 19.} Die Diptherie zählte im 19. Jahrhundert zu den Haupttodesursachen 
+bei Kindern, denn sie verlief fast immer infaust und trat, vor allem in Großsstädten, oft epidemisch auf. 
+Aber auch die Tetanusinfektion, auch bekannt als Wundstarrkrampf, galt mit einer Todesrate von rund 40 Prozent 
+als Extrem gefährlich. Das Diphtherieantitoxin kam erstmals 1891 in einer Berliner Klinik erfolgreich zur Anwendung. 
+Nach der Einführung des Mittels in den Berliner Krankenhäusern sank die Todesrate in Folge der Diphtherie radikal. 
+Die erste aktive Immunisierung durch eine Diphtherieschutzimpfung erfolgt 1913. Ab 1915 trug die in den Armeen eingeführte 
+Tetanusschutzimpfung massiv zur Reduzierung der Todesfälle durch Wundstarrkrampf bei.\footnote{Porter, Die Kunst des Heilens, 
+S. 442 u. 447.} Emil von Behring erhielt für seine Arbeit 1901 den ersten Nobelpreis für Medizin.\\
+Bemerkenswert ist hier die Entdeckung, dass auch zellfreie Seren, gewonnen aus immunisierten Tieren, virulente Bakterien 
+töteten, was zu der Vermutung führte, dass nicht nur Bakterienzellen selbst, sondern ein von ihnen gebildetes Toxin 
+Krankheitserregend ist. Auf dieser Basis trieb man die Forschung voran und in den so genannten "`goldenen Jahren"' 
+der neuen Bakteriologie (von 1879 bis 1900) wurde jährlich mindestens ein Erreger von schweren Erkrankungen identifiziert 
+von der Pest über Cholera bis zu Fleckfieber, Typhus und vielen weiteren. Auch eine ganze Reihen Schlangengiftantitoxine 
+wurden entwickelt. Die Serumtherapie war allerdings nicht unproblematisch: Die Antitoxinproduktion war nicht kontrollierbar 
+und die Mittel schwankten daher stark in Reinheit und Konzentration. Dazu kam die Serumkrankheit\footnote{Fieber, Ausschlag, 
+Gelenkschmerzen. Es handelt sich dabei um eine allergische Reaktion auf die injezierten Antigene, eine so genannte 
+Überempfindlichkeitsreaktion. Vgl.: Serumtherapie: http://www.spektrum.de/lexikon/biologie/serumkrankheit/61229 19.5.2016.} 
+als verbreitete Nebenwirkung sowie Todesfälle nach Antitoxintherapien.\footnote{Porter, Die Kunst des Heilens, S. 443.}\\
+Einige Krankheiten wie etwa Scharlach erwiesen sich als hartnäckig und ein Teil der entwickelten Impfstoffe wie eben jener gegen Tuberkulose oder die Pest waren nur mäßig bis gar nicht Erfolgreich. Behandlungen gegen diese Krankheiten wurden erst im Zuge der Debatte über die körpereigene Immunität und die Entwicklung von Antibiotika generiert.
+
+\subsection{Vom Keuchhuste zur Mengigokokkenimpfung}
+Die bahnbrechenden Erfolge des 19. Jahrhunderts in der Bakteriologie und der Medizin insgesamt führten wie geschildert zum Rückgang einiger gefürchteter Infektionskrankheiten, die in erster Linie Kinder trafen. Trotz den weiteren großen Entdeckungen, wie der Chemotherapie oder der Entdeckung des Penicillins, gab es eine ganze Reihe weiterer so genannter "`Kinderkrankheiten"', die die Menschen am Beginn des 20. Jahrhunderts fürchteten.\\
+Eine von ihnen war der \textit{Keuchhusten}. Er wurde erstmals im 16. Jahrhundert von dem französischen Arzt Guillaume de Baillou als eigene Krankheit beschrieben. Der englische Arzt Thomas Sydenham prägte 1679 den Begriff "`Pertussis"' (aus dem Lateinischen für starker/heftiger Husten). Der Erreger wurde 1906 von den Bakteriologen Jules Bordet und Octave Gengou isoliert und wurde zu Ehren seines Entdeckers \textit{Bordetella pertussis} genannt.\footnote{Ulrich Heininger (Hg.), Pertussis bei Jugendlichen und Erwachsenen, Stuttgart, 2003, S. 1.} 1915 wurde erstmals ein Pertussisimpfstoff in den USA zugelassen.\footnote{http://www.immunize.org/timeline/} Da es aber Probleme bei der Verträglichkeit bei Erwachsenen Versuchspersonen gab, kam es zu keiner allgemeinen Standardisierung. In Österreich und Deutschland wurde erst in den 1960er Jahren ein Pertussis-Ganzkeimimpfstoff, in Kombination mit Diptherie-Tetanus, flächendeckend eingesetzt, was zu einem umgehend Rückgang der Krankheitszahlen führte.Die Wirksamkeit, Sicherheit und Verträglichkeit des Ganzkeimimpfstoff war jedoch international umstritten, was zu einer Einschränkung der Impfungen und der Impfempfehlungen der STIKO und des OSR führte.\footnote{Heininger, Pertussis, S. 24 u. 54.} So wurde die Keuchhustenimpfung in Österreich bis einschließlich 1991 nur in Klammer in der allgemeinen Impfempfehlung angeführt.\footnote{Mutz, Spork, Geschichte der Impfempfehlungen in Österreich, S. 96.} \\
+Seit 1996 steht der in Japan entwickelte, so genannte azelluläre Pertussis-Impfstoff zur Verfügung. Dieser enthält nur mehr jenen Bestandteil 
+des Erregers, welcher eine entsprechende Immunantwort im Impfling hervorruft und ist damit besser verträglich. Pertussis zählt ebenso wie 
+Masern, Kinderlähmung, Pocken, Tuberkulose, Typhus und viele weitere Infektionskrankheiten gemäß dem Epidemiegesetz heute zu den gesetzlich 
+vorgeschriebenen meldepflichtigen Krankheiten.\footnote{\url{https://www.jusline.at/index.php?cpid=ba688068a8c8a95352ed951ddb88783e&lawid\=498&paid\=1} 20.5.2016.} Gemäß aktueller Impfempfehlung in Österreich wird eine Impfung gegen Keuchhusten bereits im Säuglingsalter im Rahmen der Sechsfachimpfung vorgenommen. Seit Beginn des 21. Jahrhunderts ist eine DTP Impfung auch für Jugendliche und Erwachsene empfohlen.\footnote{http://www.reisemed.at/krankheiten/keuchhusten-pertussis 27.5.2016.} Dennoch kam es seit etwa 2008/2009 zu einem deutlichen Anstieg der Keuchhustenfälle in Österreich, vor allem in der Gruppe der Sieben- bis 15-Jährigen und den 60-80-Jährigen. Als mögliche Gründe dafür werden vom Institut für Spezifische Prophylaxe und Tropenmedizin der Medizinischen Universität Wien sinkende Durchimpfungsraten, bessere Diagnostik sowie das Nachlassen der Antikörper-Kontentration nach fünf bis sechs Jahren nach der Grundimmunisierung.\footnote{Keuchhusten, Standard Online, 17. Jänner 2014: http://derstandard.at/1389857404641/Oesterreich-Keuchhusten-erlebt-Renaissance 27.5.2016.}\\
+\\
+Eine andere, gefürchtete Infektionskrankheit war (und ist es in einigen Regionen der Welt noch heute) 
+die \textit{Poliomyelitis}. Der Virus der Kinderlähmung befällt die Nervenzellen des Rückenmarkes und Verursacht bleibende Lähmungen, 
+kann auch tödlich enden. 1784 beschrieb der englische Arzt Michael Underwood (1737--1820) erstmals das klinische Erscheinungsbild der 
+Krankheit in seinem Werk "`Treatise of the Diseases of Children"'. Um die Mitte des 19. Jahrhunderts gab es erste Überlegungen und 
+Theorien dazu, dass es sich bei der spinalen Kinderlähmung um eine virale und damit übertragbare Krankheit handeln würde, was erst 
+1908 von den österreichischen Wissenschaftler Karl Landsteiner (1868--1943) und Erwin Popper (1879--1955) bewiesen werden konnte. 
+1948 schließlich gelang erstmals die Isolierung des Poliovirus durch Thomas Weller (1915--2008) und Frederick Robbins (1916--2003), 
+welche dafür den Nobelpreis erhielten. Dennoch gibt es bis heute keine ursächliche Behandlung dagegen.
+\footnote{Herwig Kollaritsch, Maria Paulke-Korinek, Poliomyelitis, S. 25, in: Österreichische Ärztezeitung, Heft 22, Wien, November 
+2014, S. 24--33. Onlineausgabe: \url{http://www.aerztezeitung.at/fileadmin/PDF/2014_Verlinkungen/State_Polio.pdf} 14.6.2016.} 
+Der erste wirksame Impfstoff dagegen wurde in den 1940er Jahren von dem amerikanischen Arzt und Forscher Jonas Salk entwickelt. 
+Es handelte sich um einen Totimpfstoff (IPV). Der Impfstoff wurde 1955 in den USA freigegeben, was zu einem radikalen Rückgang der 
+Polioerkrankungen führte und Jonas Salk auf einen Schlag zu einer weltweiten Berühmtheit machte. Dies nimmt nicht wunder wenn man 
+bedenkt, dass man vor der Entdeckung der Impfprophylaxe von Weltweit rund 600.000 Poliofällen ausging.\footnote{Tilli Tansey, Pioneer 
+of polio eradication, in: Medical History, Nature, Ausgabe 520, 2015, S. 620.} Im Nachkriegsjahr 1947 wurden allein in Österreich rund 
+3.500 Erkrankungen verzeichnet und 315 davon starben. In "`regulären Jahren"' wurden 500 bis 1000 Fälle pro Jahr gemeldet.
+\footnote{Kollaritsch, Paulke-Korinek, Poliomyelitis, S. 25.}\\
+Albert Sabin führte die Forschung weiter und entwickelte 1960 einen Lebendimpfstoff, welcher als Schluckimpfung verabreicht 
+wurde und 1960/61 erstmals in Österreich zur Anwendung. In den 1990er Jahren kam es jedoch in Österreich zu einer abermalige 
+Umstellung auf den Totimpfstoff, da der Lebendimpfstoff das Risiko einer vakzine-assoziierten paralytischen Poliomyelitis
+\footnote{kurz VAPP, Rückmutation des Lebendimpfstoffes zu einem gefährlichen Krankheitserreger, führte zu Impf-Poliomyelitis} 
+barg. Seit 2001 wird zur Polioimpfung in allen Altersgruppen ausschließlich der IPV empfohlen und angewendet.
+\footnote{Mutz, Spork, Geschichte der Impfempfehlungen in Österreich, S. 95.}\\
+Mithilfe des Polioimpfstoffes konnte die Kinderlähmung in den meisten westlichen Ländern gebannt werden. In Österreich wurde 
+1982 der letzte Fall von Kinderlähmung gemeldet. 2002 bestätigte die WHO die Elimination der Poliomyelitis in Europa. Andere 
+Regionen der Welt, wie Afrika, Afghanistan, Jemen u. A. sind nach wie vor von regelmäßigen Polioausbrüchen bedroht.
+\footnote{Peter Kriwy, Gesundheitsvorsorge bei Kindern. Eine empirische Untersuchung des Impfverhaltens bei Masern, 
+Mumps und Röteln, Wiesbaden, 2007, S. 20.}\\
+\\
+Die Masern waren eine weitere, gefährliche Krankheit, für welche in der zweiten hälfet des 20. Jahrhunderts ein Impfstoff entwickelt 
+wurde. Seine Erstzulassung erfolgte 1963 in den USA und noch im selben Jahr war er in Österreich erhältlich. Seit 1967 ist ein 
+Lebendimpfstoff verfügbar. Dieser wird bis heute verwendet, da man beobachtet hatte, dass es bei einigen Kindern der Totimpfstoff 
+zu atypischen Masern\footnote{hohes Fieber, blutiger Ausschlag, Ödeme, Lymphknotenvergrößerung u. a. Vgl.: Mutz, Spork, Geschichte 
+der Impfempfehlungen in Österreich, S. 95.} führte, was beim Lebendimpfstoff nicht vorkommt. Diesen Masernimpfstoff setzte die WHO 
+auf ihre Liste der unentbehrlichen Arzneimittel\footnote{\url{http://www.who.int/medicines/publications/essentialmedicines/18th_EML.pdf} 20.5.2016.} 
+und dass obwohl in Österreich mehr und mehr die Überzeugung umsich greift, die Masern seien eine harmlose Kinderkrankheit, was nicht 
+zuletzt die steigende Zahl der Erkrankungen belegen. So wurden etwa für 2015 insgesamt 309 Fälle im nationalen Masern Surveillance 
+System erfasst.\footnote{Österreich hat zweithöchste Masernrate in Europa, Die Presse Online, 25.5.2016: 
+\url{http://diepresse.com/home/leben/gesundheit/4996225/Osterreich-hat-zweithochste-MasernRate-in-Europa} 8.6.2016.} 
+Seit 1993 wird in Österreich die Masernimpfung in Kombination mit Mumps und Röteln (MMR) empfohlen. Diese 
+führte auch zu einer Unterbindung des Röteln-Wildvirus, den man bis dahin bewusst in Österreich zirkulieren lies. 
+Dahinter steckte der Gedanke, dass die Infektion mit dem Wildvirus eine bessere Langzeitimmunität versprach und zur Vermeidung der 
+Röteln-Embryopathie\footnote{Erkrankt eine schwangere Frau an den Röteln, kann dies zu Fehlbildungen bis hin zur Fehlgeburt führen. 
+Vgl.: \url{http://flexikon.doccheck.com/de/RC3B6telnembryopathie} 27.5.2016.} ausschließlich Mädchen 
+ab dem 13. Lebensjahr zu Impfen wären.\footnote{Mutz, Spork, Geschichte der Impfempfehlungen in Österreich, S. 95.} 
+Ähnlich wie bei Masern, gibt es auch gegen den Mumps keine ursächliche Behandlung und es können ausschließlich 
+pflegerische Maßnahmen getroffen werden.\footnote{\url{http://www.reisemed.at/krankheiten/mumps} 27.5.2016.}\\
+\\
+Dieser historische Abriss zeigt sehr anschaulich, dass die Menschen beständig danach streben, Impfstoffe für alle möglichen Krankheiten zu entwickeln. So kamen zum Beispiel 2005 die Impfstoffe für Windpocken und Rotaviren auf den Markt, 2006 wurde ein HPV-Impfstoff vorgestellt und zuletzt erschien ein Impfstoff gegen den Meningokokkenstamm B. Er wurde im Jänner 2013 von der EU-Kommission zugelassen.\footnote{Neue Impfung gegen Meningitis, Der Standard Online, 23.4.2014: http://derstandard.at/1397521376319/Neue-Impfung-gegen-Meningitis 8.6.2016.}\\
+Die Einführung, respektive Zulassung, eines neuen Impfstoffes sorgt (und sorgte?) stets für großes Aufsehen, 
+gefolgt von öffentlichen Risiko-Nutzen-Diskussionen. Zuletzt geschehen 2006 bei der Erstzulassung eines 
+HPV-Impfstoffes. Die Humane Papilloma-Viren (HPV) sind weitverbreitete Viren, welche primär über Sexualkontakt 
+übertragen werden und unter anderem für die Entstehung von Krebs verantwortlich sind. Besonders zwei Stämme, 
+HPV-16 und HPV-18, zählen als häufigste Ursache für Gebärmutterhalskrebs (auch Zervixkarzinom). Es existieren 
+jedoch rund 100 verschiedene Virentypen, wobei viele davon als harmlos eingestuft werden.
+\footnote{HPV-Impfung: \url{http://www.netdoktor.at/gesundheit/impfung/hpv-impfung-5339} 14.6.2016.} 
+Gegen diese beiden gefährlichen Virusstämme soll nun die 2006 vorgestellt Impfung Schutz bieten. 
+Die Impfung wirkt jedoch nicht, wenn bereits eine HPV-Infektion vorliegt. Aus diesem Grund wird eine 
+Impfung vor dem ersten Sexualkontakt empfohlen. Aber bereits kurz nach der Einführung der Impfung 
+überschlagen sich die Berichte und Artikel über die Wirkung und Schaden der Impfung und 2013 kam es in Frankreich zu 
+ersten Klagen gegen eine der Herstellerfirmen, Sanofi Pasteur wegen fahrlässiger Körperverletzung, wie der Kurier vom 
+25.11.2013\footnote{HPV-Impfstoff: Vier Frauen klagen Hersteller: \url{http://kurier.at/wissen/hpv-impfstoff-vier-frauen-klagen-hersteller/37.536.723}
+2.6.2016.} berichtete. 
+In dem Zeitungsbericht ist des weiteren die Rede davon, dass mithilfe der Impfung in Österreich jährlich 
+rund 700 Krebsfälle vermieden werden können. Das Portal "`Medizin Transparent"' warnt jedoch vor Vorsicht 
+bei der Nennung derartiger Zahlen. Da die Ausbildung von Zerviskarzinomen mitunter Jahrzehnte dauern kann, 
+ließen sich aktuell keine validen Aussagen über eine Reduktion der Krebsrate durch die Impfung machen. Es 
+könnte jedoch die Wirksamkeit anhand der Reduktion der Krebs-Vorstufen-Raten gezeigt werden.
+\footnote{HPV-Impfung: nüchterne Fakten statt hitziger Diskussionen: \url{http://www.medizin-transparent.at/hpv-impfung} 2.6.2016.}
+
+
+
+
+\subsection{Impfempfehlung in Österreich}
+Nach der steigenden Anzahl der Impfstoffe bemessen, stellte sich nicht nur für die Medizin die Frage danach, welche Impfung mit welchem 
+Impfstoff in welcher Kombination zu empfehlen sei. Diesem Bedürfnis folgend erschien 1959 in der Wiener Medizinischen Wochenschrift 
+zum ersten mal eine allgemein Impfempfehlung in Österreich. Diese beinhaltete die Tuberkuloseimpfung (BCG) bei Neugeborenen, DPT ab 
+dem vierten Lebensmonat, die gesetzlich verankerte Pockenimpfung im zweiten Lebensjahr sowie die Polioimpfung.\footnote{Mutz, Spork, 
+Geschichte der Impfempfehlungen in Österreich, S. 96.}\\
+Im Jahr 1974 kam es in Österreich zur Einführung des Mutter-Kind-Passes. Dieser enthält seit seiner erstmaligen Einführung ebenfalls 
+eine allgemeine Impfempfehlung, einen Impfpass für das Kind sowie ein Impf-Gutscheinheft, mittels welchem ein Großteil der empfohlenen 
+Impfungen kostenlos durchgeführt werden können. Diese Maßnahme trug erheblich zur breiten Akzeptanz der Impfprogramme bei.
+\footnote{Mutz, Spork, Geschichte der Impfempfehlungen in Österreich, S. 96.} \\
+Seit 1984 ist es der Oberste Sanitätsrat, welcher alljährlich einen offiziellen Impfplan für Österreich ausgibt. Der Oberste 
+Sanitätsrat setzt sich aus Experten diverser medizinischen Fächer, Ärzte- und Apothekerkammer sowie der Sozialversicherungen 
+zusammen und berät das Gesundheitsministerium in medizinischen Fragen.
+\footnote{OSR: \url{http://www.bmg.gv.at/home/Ministerium/Oberster_Sanitaetsrat/} 27.5.2016.}
+1997 wurde in Zusammenarbeit vom Bundesministerium für Gesundheit, den Bundesländern sowie dem Hauptverband der Sozialversicherungsträger  
+ein gemeinsames Impfkonzept ausgearbeitet. Darin wurde festgelegt, dass österreichische Kinder bis zum 15. Lebensjahr bestimmte, 
+ausgewählte Impfstoffe kostenlos erhalten. Welche Impfungen das Programm enthält orientiert sich abermals an der Empfehlung des 
+OSR.\footnote{Michael Kunze, Das österreichische Impfsystem und seine Finanzierung. Lösungsvorschläge für alternative 
+Finanzierungsformen, Wien, 2010, S. 9, in: \url{http://www.oevih.at/uploads/media/Oesterreichisches_Impfsystem_und_seine_Finanzierung.pdf} 27.5.2016.}\\
+Die letzten Erweiterungen des österreichischen Kinder-Impfprogrammes erfolgten 2012, mit der Aufnahme der Pneumokokken- und der 
+Menigokokkenimpfung\footnote{Für die Menigogokkenstämme A, C, Y und W135.}. 2014 wurde schließlich die HPV-Impfung
+(Humane Papilloma Viren) für alle Kinder ab dem vollendeten neunten Lebensjahr dem Programm hinzugefügt.
+\footnote{Erweiterung Kinder-Impfprogramm: \url{http://www.bmg.gv.at/home/Gesundheitsleistungen/Kinder_Impfprogramm/} 8.6.2016.}
+
+
+\section{Unfälle, Schäden, Kritiker und Gegner}
+\subsection{Was ist ein Impfschaden?}
+Grundsäztlich lässt sich festhalten, dass es sich bei einer Impfung um die absichtliche Zuführung (abgeschwächter) 
+Krankheitserreger in den gesunden Menschen handelt, um dadurch eine Immunreaktion hervorzurufen. 
+Damit wird der Impfstoff als biogenes Arzneimittel bezeichnet, da er einerseits chemisch im Labor hergestellt wird, 
+andererseits eine natürliche biologische Reaktion des Körpers provoziert. Dennoch handelt es sich um ein Arzneimittel 
+und diese können bekanntlich Nebenwirkungen aufweisen. Um es mit den Worten des deutschen Arztes und Pharmakologen 
+Gustav Kuschinsky (1904-1992) zu sagen: \textit{"`Wenn behauptet wird, dass eine Substanz keine Nebenwirkungen hat, 
+so besteht der dringende Verdacht, dass sie auch keine Hauptwirkung besitzt."'}\footnote{Zitiert nach: \url{http://www.reisemed.at/impfungen/impfreaktionen-und-impfnebenwirkungen} 31.5.2016.} \\
+Diese Nebenwirkungen werden in drei Kategorien eingeteilt:
+\begin{enumerate}
+  \item{Impfreaktion/Impfkrankheit: Darunter versteht man jene Beschwerden, die im Rahmen der natürlichen Immunantwort des Körpers auftreten. 
+    Dies können Ausschläge, Rötungen, leichtes Fieber, Gliederschmerzen, bis hin zur abgeschwächten Form der geimpften Krankheit 
+    (zB. Impfmasern).\footnote{Ursula Wiedermann-Schmitz, u. A., Reaktionen und Nebenwirkungen nach Impfungen. Erläuterungen und Definition in 
+    Ergänzung zum Österreichischen Impfplan, 2013, in: \url{http://bmg.gv.at/cms/home/attachments/1/5/5/CH1100/CMS1386342769315/impfungen-reaktionen_nebenwirkungen.pdf} 31.5.2016 S. 4.}}
+  \item{Impfnebenwirkung: Davon spricht man, wenn es nach der Impfung zu einer schwereren Erkrankung kommt, welche eine 
+    vorübergehende oder längere Therapiebedürftigkeit nach sich zieht oder zu bleibenden Schäden führen kann.
+    \footnote{\url{http://www.reisemed.at/impfungen/impfreaktionen-und-impfnebenwirkungen} 31.5.2016.}}
+  \item{Impfschaden: Das ist ein "`\textit{über die Ausmaß hinausgehende gesundheitliche Schädigung durch eine 
+    Schutzimpfung}"'\footnote{Impfschaden: \url{https://www.gesundheit.gv.at/Portal.Node/ghp/public/content/Nebenwirkungen_von_Impfungen_LN.html} 31.5.2016.}, 
+    was in der Regel neurologische Erkrankungen wie Lähmung oder geistige Behinderung infolge von Hirnhautentzündungen meint. Betont 
+    werden muss, dass es sich hierbei um einen juristischen, keinen medizinischen Begriff handelt.
+    \footnote{Impfschaden: \url{https://www.gesundheit.gv.at/Portal.Node/ghp/public/content/Nebenwirkungen_von_Impfungen_LN.html} 31.5.2016.}}
+\end{enumerate}
+Kommt es zu einer derartigen unerwünschten Impfnebenwirkung/-schaden, kann (oder muss) dieser im Rahmen des Arzneimittelgesetztes 
+§75a im Bundesamt für Sicherheit im Gesundheitswesen gemeldet werden. Wird von den Behörden ein 
+entsprechender Impfschaden festgestellt, muss eine staatliche Entschädigung geleistet werden. 
+Höhe und Ausmaß sind im Impfschadensgesetz von 1973 geregelt.
+\footnote{Impfschaden und Entschädigung: \url{https://www.gesundheit.gv.at/Portal.Node/ghp/public/content/Nebenwirkungen_von_Impfungen_LN.html}}\\
+Auf internationaler Ebene gibt es noch die Definition der WHO. Diese spricht von einem 
+\textit{Adverse Events Following Immunization} (AEFI). Das AEFI bezeichnet jegliches unerwünschtes 
+gesundheitliches Ereignis nach einer Impfung, unabhängig eines kausalen Zusammenhanges. Die Steigerung dazu, nämlich lebensbedrohlichen 
+Zustand oder Tod nach AEFI, bezeichnet die WHO als \textit{Serious Adverse Event} (SAE).\footnote{Wiedermann-Schmidt, Reaktion nach Impfungen, S. 5.}\\
+Beachtet werden muss hier, dass es sich hierbei um Definitionen aus der Schulmedizin handelt. Einige Alternativmediziner 
+stimmen mit diesen Beschreibungen nicht überein und verstehen bereits Verhaltensänderungen bei Kindern (Unwohlsein, Fieber, 
+vorübergehende Änderung im Schlafverhalten ...) als Impfschaden.\footnote{Jana Gärtner, Elternratgeber im Wandel der Zeit. 
+Deskriptive Ratgeberanalyse am Beispiel der sogenannten Klassischen Kinderkrankheiten unter Berücksichtigung der Impfdebatte, Berlin, 2010, S. 91.}
+
+\subsection{Unfälle und Schäden durch mangelhafte Impfstoffe}
+Befasst man sich mit den Errungenschaften der medizinischen Entwicklung bleibt es nicht aus, auch einen Blick auf etwaige negative Folgen zu werfen, die stets bei der Erprobung neuer Techniken und eben auch Arzneimittel auftreten können. Im besonderen interessieren an dieser Stelle jene Ereignisse, die im Rahmen der Impfstoffentwicklung zu schwerwiegenden Unfällen führten. Auch hier ist eine vollständige Darstellung aller Ereignisse nicht möglich, wodurch das Augenmerk auf die größeren Ereignisse gelegt wird, begonnen bei der \textit{Pockenimpfung}.\\
+Zu Beginn sah die Impfmethode vor, dass direkt von Mensch zu Mensch übergeimpfte wurde. Dies bedeutete, dass man die Sekrete von Impfkranken Kindern gezielt sammelte und aus deren Pusteln neuen Impfstoff generierte. Man hatte dazu etwa in Österreich eigene "`Regenerieranstalten"' eingerichtet. Die (aus heutiger Perspektive) logische Folge dieses Vorgehens war die direkte Übertragung von Krankheiten wie Syphilis, Tuberkulose oder Hepatitis. In Zeiten vor der Erfindung von Antibiotika und der wissenschaftlichen Hygiene waren das in jedem Fall tödliche Krankheiten. Dieses schwerwiegende Problem beseitigte man schließlich 1873, als der OSR beschloss, zu jeder Impfung ausschließlich Tierlymphen zu verwenden. \footnote{Flamm, Vutuc, Geschichte der Pocken-Bekämpfung in Österreich, S. 269.}\\
+\\
+Als chronologisch nächstes großes Unglück im Rahmen der Impfstoffentwicklung gilt der "`\textit{Lübecker Totentanz}"' im Jahr 1930. Dabei handelt es sich um jenes Ereignis, bei welchem nach Verabreichung der BCG-Tuberkulose-Impfung 77 Säuglinge zu Tode kamen.\\
+Die Tuberkuloseimpfung wurde Anfang des 20. Jahrhunderts von den französischen Wissenschaftlern 
+Albert Calmette und Camille Guerin entwickelt. Dem Impfling werden in diesem Verfahren abgeschwächte Erreger der Rindertuberkulose 
+verabreicht, welche die körpereigenen Abwehrstoffe anregen sollen. Das entspricht eins zu eins dem Vorgehen der Pockenimfpung. 
+1921 wurde die Impfung erstmals erfolgreich in Frankreich durchgeführt und verbreitet sich danach rasch über den Kontinent. 
+1929/30 erreichte sie erstmals Lübeck. Das dortige Krankenhaus erwarb zu diesem Zweck eine entsprechende BCG Kultur in Paris, 
+um daraus einen Impfstoff zu generieren. Es kam jedoch in Folge von unhygienischen Laborbedingungen und zur Impfstofferzeugung 
+nicht befähigtem Personal zu einer Kontamination des Impfstoffes mit einem virulenten Erreger, welcher den Säuglingen "`verfüttert"', 
+also über die Nahrung eingegeben wurde. 72 der 77 verstorbenen Säuglinge starben nachweislich an impfbedingter Tuberkulose. 
+Es folgte ein weltweit aufsehenerregenden Prozess, bei welchem der Klinikleiter Georg Deycke und der Leiter des Lübecker Gesundheitsamtes 
+Ernst Altstaedt als verantwortliche zu zwei Jahren, beziehungsweise 15 Monate Gefängnis verurteilt wurden. Entsprechend kam es zu 
+einem großen Vertrauensverlust in die Impfung und es dauert bis in die 1950er Jahre, die BCG-Impfung allgemein zu rehabilitieren.
+\footnote{Lübecker Totentanz, Wiener Zeitung Online, 3.2.2012: \url{http://www.wienerzeitung.at/themen_channel/wissen/geschichte/432666_Luebecker-Totentanz.html} 2.6.2016 und 
+Lübecker Impfunglück: \url{http://flexikon.doccheck.com/de/L\%C3\%BCbecker_Impfungl\%C3\%BCck} 2.6.2016.} 
+1991 wurde schließlich in Österreich die generelle BCG-Impfung, welche seit 1949 durchgeführt wurde, auf besonders 
+gefährdete Personengruppen begrenzt. Seit 2001 steht die BCG nicht mehr auf der Liste der in Österreich empfohlenen 
+Impfungen.\footnote{Mutz, Spork, Geschichte der Impfempfehlungen in Österreich, S. 95.}\\
+\\
+Ähnliches, weltweites Aufsehen erregte der "`\textit{Cutter Unfall}"' 1955, welcher sich im Rahmen der Einführung der von Jonas 
+Salk entwickelten Polioimpfung ereignete. Bedenkt man, dass die Polioepedemien jährlich tausende von Kinder betraf und jene, 
+welche die Krankheit überlebten, in der Regel dauerhaft schädigte, wundert es nicht, dass die Impfung mit großer Erwartung 
+verbunden war und zunächst bereitwillig aufgenommen wurde. So erhielten im April 1955, im Rahmen des ersten öffentlichen 
+Polio-Impfprogrammes in den USA rund 200.000 Kindern den Salk-Polio-Impfstoff. Aber bereits nach wenigen Tagen tauchten die 
+ersten Berichte von Lähmungserscheinungen bei Impflingen auf und die Kampagne wurde nach nur einem Monat gestoppt.
+\footnote{Michael Fitzpatrick, The Cutter Incident. How America's First Polio Vaccine Led to a Growing Vaccine Crisis, in: 
+Journal of the Royal Society of Medicine, Heft 99 (3), London, 2006, S. 156.} 
+Ursache dafür war abermals 
+eine Verunreinigung des Totimpfstoffes mit einem virulenten Wildvirus. Betroffen waren ausschließlich jene 
+Impfstoff, welche das Kalifornische Familienunternehmen \textit{Cutter Laboratories} hergestellt hatte und von der 
+zuständigen Kontrollbehörde nicht entdeckt wurde.\footnote{Kinderlähmung, in: Die Welt Digital, 
+24.10.2012: \url{http://www.welt.de/gesundheit/article110213993/Eine-Welt-ohne-Kinderlaehmung-ist-zum-Greifen-nah.html} 2.6.2016.} 
+Von dem Vorfall betroffen waren rund 40.000 Kinder, bei welchem nach der Imfpung Polio diagnostiziert wurde. Etwa 200 
+davon erlitten bleibende Schäden und 10 Kinder überlebt die Tragödie nicht.\footnote{Fitzpatrick, The Cutter Incident, S. 156.} 
+Der Vertrauensverlust auf allen Seiten war entsprechend groß und der Cutter Unfall hatte für alle beteiligten weitreichende Folgen, 
+ganz besonders für Jonas Salk. Denn ihm wurde auf Grund dieses Ereignisses der Nobelpreis verweigert und dass obwohl der Unfall 
+nachweislich durch eine Produktionsfehler bedingt wurde und in keinerlei Zusammenhang mit der Wirksamkeit des Salk-Impfstoffes stand. 
+Auf behördlicher Ebene kam es in Folge dessen zu einer Verschärfung der Sicherheitskontrollen im Rahmen der Impfstoffherstellung. 
+Die Folgen für die US-Pharmaindustrie waren jedoch verheerend. Obwohl die \textit{Cutter Laboratories} nicht der Fahrlässigkeit 
+schuldig gesprochen wurden, musste sie den betroffen hohe Schadensersatzleistungen auszahlen. Dies war in der damaligen 
+US-Gerichtsbarkeit einmalig und in den folgenden Jahrzehnten kam es zu einer Welle an Schadensersatzklagen gegen Impfstoffhersteller. 
+Dies führte dazu, dass viele Firmen die Impfstoffproduktion generell einstellen. Dies führte dazu, dass es 1984 in den USA nurmehr 
+eine Firma gab, welche den DPT-Impfstoff herstellte. Erst 1986 kam es zu einer entsprechenden gesetzlichen Regelung im Rahmen des 
+\textit{National Vaccine Injury Compensation Programm}.
+\footnote{Vaccine Injury Compensation Programs: \url{http://www.historyofvaccines.org/content/articles/vaccine-injury-compensation-programs} 8.6.2016.} 
+Zu guter Letzt führte der "`Cutter Incident"' zur Umstellung auf den Salbin-Lebendimpfstoff, der die bereits erläuterten Probleme 
+mit sich brachte.\footnote{Mutz, Spork, Geschichte der Impfempfehlungen in Österreich, S. 95.}
+
+\subsection{Eine kurze Geschichte der Impfgegner}
+
+
+
+\newpage
+
+\section{Abkürzungsverzeichnis}
+AEFI = Adverse Events Following Immunization\\
+BCG = Bacillus Calmette-Guerin (Tuberkuloseimpfung)\\
+DTP = Diptherie-Tetanus-Pertussis Kombinationsimpfstoff\\
+HPV = Humane Papilloma Viren\\
+IPV = Inaktiver Polioimpfstoff\\
+MMR-Impfung = Masern-Mumps-Röteln Impfung\\
+OSR = Oberste Sanitätsrat (in Österreich)\\
+OPV = Orale Polioimpstoff\\
+SAE = Serious Adverse Event\\
+STIKO = Ständige Impfkommission am Robert Koch Institut (Deutschland)\\
+VAPP = vakzine-assoziierten paralytischen Poliomyelitis\\
+
+
+\newpage
+
+\section{Literaturverzeichnis}
+
+\begin{itemize}
+\item{Martin Dings (Hg.), Medizinkritische Bewegungen im Deutschen Reich, 1870 bis 1933, Stuttgart, 1996.}
+\item{Wolfgang U. Eckart, Der Beginn der Ära von Serumtherapie und Impfung, in: Ärzte Zeitung, Heft 48, 2004, S. 19.}
+\item{Wolfgang U. Eckart, Robert Jütte, Medizingeschichte. Eine Einführung, Köln, 2007.}
+\item{Wolfgang U. Eckart (Hg.), Jenner. Untersuchungen über die Ursachen und Wirkungen der Kuhpocken, Berlin, 2016.}
+\item{Wolfgang U. Eckart, Geschichte der Medizin, 2. Auflage, Berlin, 1994.}
+\item{Heinz Flamm, Chritian Vutuc, Geschichte der Pocken-Bekämpfung in Österreich, in: Wiener klinische Wochenschrift, Heft 122, Wien, 2010, S. 265--275.}
+\footnote{Heinz Flamm, Pasteurs Wut-Schutzimpfung - vor 130 Jahren in Wien mit Erfolg begonnen und doch offiziell abgelehnt, in: Wiener Medizinische Wochenschrift, Heft 165, Wien, 2015, S. 322--339.}
+\item{Michael Fitzpatrick, The Cutter Incident. How America's First Polio Vaccine Led to a Growing Vaccine Crisis, in: Journal of the Royal Society of Medicine, Heft 99 (3), London, 2006, S. 156.}
+\item{Jana Gärtner, Elternratgeber im Wandel der Zeit. Deskriptive Ratgeberanalyse am Beispiel der sogenannten Klassischen Kinderkrankheiten unter Berücksichtigung der Impfdebatte, Berlin, 2010.}
+\item{Heinz-Gerhard Haupt, Jürgen Kocka, Historischer Vergleich: Methoden, Aufgaben, Probleme. Eine Einleitung, in: Heinz-Gerhard Haupt, Jürgen Kocka (Hg.), Geschichte und Vergleich. Ansätze und Ergebnisse international vergleichender Geschichtsschreibung, Frankfurt/Main, 1996. S. 9--46.}
+\item{Herwig Kollaritsch, Maria Paulke-Korinek, Poliomyelitis, S. 25, in: Österreichische Ärztezeitung, Heft 22, Wien, November 2014, S. 24--33. Onlineausgabe: \url{http://www.aerztezeitung.at/fileadmin/PDF/2014_Verlinkungen/State_Polio.pdf} 14.6.2016.}
+\item{Ulrich Heininger (Hg.), Pertussis bei Jugendlichen und Erwachsenen, Stuttgart, 2003.}
+\item{Marina Hilber, Institutionalisierte Geburt. Eine Mikrogeschichte des Gebärhauses, Bielefeld, 2012.}
+\item{Jakob Hort, Vergleichen, Verflechten, Verwirren. Vom Nutzen und Nachteil der Methodendiskussion in der wissenschaftlichen Praxis: ein Erfahrungsbericht, in: Agnes Arndt u.a. (Hg.), Vergleichen verflechten, verwirren? Europäische  Geschichtsschreibung zwischen Theorie und Praxis, Göttingen 2011, S. 319--341.}
+\item{Calixte Hudemann-Simon, Die Eroberung der Gesundheit 1750--1900, Frankfurt, 2000.}
+\item{Hartmut Kaelble, Historischer Vergleich: \url{http://docupedia.de/zg/Historischer\\\_Vergleich?oldid=106431}, 16.7.2015.}
+\item{Michael Kunze, Das österreichische Impfsystem und seine Finanzierung. Lösungsvorschäge für alternative Finanzierungsformen, 
+Wien, 2010, S. 9, in: \url{http://www.oevih.at/uploads/media/Oesterreichisches_Impfsystem_und_seine_Finanzierung.pdf} 27.5.2016.}
+\item{Peter Kriwy, Gesundheitsvorsorge bei Kindern. Eine empirische Untersuchung des Impfverhaltens bei Masern, Mumps und Röteln, Wiesbaden, 2007.}
+\item{Francisca Loetz, Vom Kranken zum Patienten. ''Medikalisierung'' und medizinische Vergesellschaftung am Beispiel Badens 1750--1850, Stuttgart, 1993.}
+\item{Philip Mayring, Qualitative Inhaltsanalyse. Grundlagen und Techniken, 12. Auflage, Basel, 2015.}
+\item{Philipp Mayring, Qualitative Inhaltsanalyse, in: Forum: Qualitative Sozialforschung, Volume 1, No. 2, Art. 20, Juni 2000.}
+\item{Thomas Mergel, Modernisierung, Pkt. 1, in: \url{http://ieg-ego.eu/de/threads/modelle-und-stereotypen/modernisierung/thomas-mergel-modernisierung} 24.1.2016.}
+\item{Ingomar Mutz, Diether Spork, Geschichte der Impfempfehlungen in Österreich, in: Wiener Medizinische Wochenschrift, Heft 157/5, Wien, 2007, S. 94--97.}
+\item{Dorothy Porter, Roy Porter, The politics of Prevention: Anti-Vaccinationism and Public Health in nineteenth-century England, S. 234, in: Medical Historiy, Heft 32, o. A., 1988, S. 231--252.}
+\item{Roy Porter, Die Kunst des Heilens. Eine medizinische Geschichte der Menschheit von der Antike bis heute, Berlin, 2000.}
+\item{Markus Sonntag, Pockenimfpung und Aufklärung. Popularisierung der Inokulation und Vakzination. Impfkampagne im 18. und frühen 19. Jahrhundert, Bremen, 2014.}
+\item{Tilli Tansey, Pioneer of polio eradication, in: Medical History, Nature, Ausgabe 520, 2015,}
+\item{Vaccine Injury Compensation Programs: \url{http://www.historyofvaccines.org/content/articles/vaccine-injury-compensation-programs} 8.6.2016.}
+\item{Hans-Ulrich Wehler, Modernisierungstheorie und Geschichte, Göttingen, 1975.}
+\item{Ursula Wiedermann-Schmitz, u. A., Reaktionen und Nebenwirkungen nach Impfungen. Erläuterungen und Definition in Ergänzung zum Österreichischen Impfplan, 2013, in: \url{http://bmg.gv.at/cms/home/attachments/1/5/5/CH1100/CMS1386342769315/impfungen-reaktionen_nebenwirkungen.pdf} 31.5.2016}
+\end{itemize}
+
+
+\newpage
+
+\subsection{Onlineartikel}
+
+\begin{itemize}
+\item{Argument: \url{http://www.ejka.org/de/content/wie-ist-eine-gute-argumentation-aufgebaut} 26.4.2016.}
+\item{Argument: \url{http://www.duden.de/rechtschreibung/Argument} 26.4.2016.}
+\item{BMG Prävention: \url{http://www.bmg.gv.at/home/Schwerpunkte/Gesundheitsfoerderung_Praevention/} 15.4.2016.}
+\item{BMI Impfen: \url{http://bmg.gv.at/home/Schwerpunkte/Gesundheitsfoerderung_Praevention/Impfen/} 15.4.2016.}
+\item{Epidemiegesetz: \url{https://www.jusline.at/index.php?cpid=ba688068a8c8a95352ed951ddb88783e&lawid=498&paid=1} 20.5.2016.}
+\item{Erweiterung Kinder-Impfprogramm: \url{http://www.bmg.gv.at/home/Gesundheitsleistungen/Kinder_Impfprogramm/} 8.6.2016.}
+\item{Gesundheitsprävention: \url{http://www.aamp.at/unsere-themen/praevention/definition-praevention/} 15.4.2016.}
+\item{Historiy of public health: \url{http://priory.com/history_of_medicine/public_health.htm} 15.5.2016.}
+\item{HPV-Impfung: \url{http://www.netdoktor.at/gesundheit/impfung/hpv-impfung-5339} 14.6.2016.}
+\item{HPV-Impfung: nüchterne Fakten statt hitziger Diskussionen: \url{http://www.medizin-transparent.at/hpv-impfung} 2.6.2016.}
+\item{HPV-Impfstoff: Vier Frauen klagen Hersteller: \url{http://kurier.at/wissen/hpv-impfstoff-vier-frauen-klagen-hersteller/37.536.723}\url{ 2.6.2016.}
+\item{Impfreaktion/Impfschaden: \url{http://www.reisemed.at/impfungen/impfreaktionen-und-impfnebenwirkungen} 31.5.2016.}
+\item{Impfschaden: \url{https://www.gesundheit.gv.at/Portal.Node/ghp/public/content/Nebenwirkungen_von_Impfungen_LN.html} 31.5.2016.}
+\item{Edward Jenner, Enxyclopaedia Britannica: \url{http://www.britannica.com/biography/Edward-Jenner} 8.3.2016.}
+\item{Edward Jenner: \url{http://www.jennermuseum.com/the-man.html} 28.4.2016.}
+\item{Keuchhusten: \url{http://www.reisemed.at/krankheiten/keuchhusten-pertussis} 27.5.2016.}
+\item{Keuchhusten, Standard Online, 17.1.2014: \url{http://derstandard.at/1389857404641/Oesterreich-Keuchhusten-erlebt-Renaissance} 27.5.2016.}
+\item{Lübecker Totentanz, Wiener Zeitung Online, 3.2.2012: \url{http://www.wienerzeitung.at/themen_channel/wissen/geschichte/432666_Luebecker-Totentanz.html} 2.6.2016.}
+\item{Lübecker Impfunglück: \url{http://flexikon.doccheck.com/de/L\%C3\%BCbecker_Impfungl\%C3\%BCck} 2.6.2016.}
+\item{Mumps: \url{http://www.reisemed.at/krankheiten/mumps} 27.5.2016.}
+\item{OSR: \url{http://www.bmg.gv.at/home/Ministerium/Oberster_Sanitaetsrat/} 27.5.2016.}
+\item{Neue Impfung gegen Meningitis, Der Standard Online, 23.4.2014: \url{http://derstandard.at/1397521376319/Neue-Imfpung-gegen-Meningitis} 8.6.2016.}
+\item{Kinderlähmung-Impfen oder nicht? in: Spiegel Online, Heft 17, 24.4.1957, S. 28--32.}
+\item{Kinderlähmung, in: Die Welt Digital, 24.10.2012: \url{http://www.welt.de/gesundheit/article110213993/Eine-Welt-ohne-Kinderlaehmung-ist-zum-Greifen-nah.html} 2.6.2016.}
+\item{Österreich hat zweithöchste Masernrate in Europa, Die Presse Online, 25.5.2016: \url{http://diepresse.com/home/leben/gesundheit/4996225/Osterreich-hat-zweithochste-MasernRate-in-Europa} 8.6.2016.}
+\item{Röteln-Embryopathie: \url{http://flexikon.doccheck.com/de/R\%C3\%B6telnembryopathie} 27.5.2016.}
+\item{Serumtherapie: \url{http://www.spektrum.de/lexikon/biologie/serumkrankheit/61229} 19.5.2016.}
+\item{Vaccine Timeline: \url{http://www.immunize.org/timeline/} 20.5.2016.}
+\item{Gerhard van Swieten: \url{http://austria-forum.org/af/Wissenssammlungen/Biographien/Swieten,_Gerard_van} 11.5.2016.}
+\item{Verfassung der Weltgesundheitsorganisation vom 22.7.1946, Stand 8. Mai 2014, S. 1. in: \url{https://www.admin.ch/opc/de/classified-compilation/19460131/201405080000/0.810.1.pdf} 6.4.2016.}
+\item{Vorsorgeuntersuchung: \url{https://www.gesundheit.gv.at/Portal.Node/ghp/public/content/Die_Vorsorgeuntersuchung_LN.html} 13.4.2016.}
+\item{Weltgesundheitstag: \url{http://www.weltgesundheitstag.de/cms/index.asp?inst=wgt-who&snr=11138&t=2016\%A7\%A7Diabetes} 7.4.2016.}}
+\item{WHO-Ottawa-Charta: \url{http://www.euro.who.int/__data/assets/pdf_file/0006/129534/Ottawa_Charter_G.pdf} 7.4.2016.}
+\item{WHO Model List of Essential Medicines: \url{http://www.who.int/medicines/publications/essentialmedicines/18th_EML.pdf} 20.5.2016.}
+\end{itemize}
+
+
+\section{Gedruckte Quellen}
+
+\begin{itemize}
+\item{Johann Kumpfhofer, Predigt von der Pflicht der Eltern ihren Kindern die Kuhpocken einimpfen zu lassen, Linz, 1808.}
+\item{Gustav Adolf Schlechtendahl, Wahn oder Wirklichkeit? Vorurteil oder Wahrheit? Gedanken und Aktenstücke zur Frage der Schutzpocken-Impfung, Berlin, 1908.}
+\end{itemize}
+
+
+
+\end{document}
