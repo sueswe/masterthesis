@@ -16,11 +16,12 @@
 \contentsline {subsection}{\numberline {7.2}Von der Kuhpockenvaccination zur allgemeinen Impfpflicht}{24}{subsection.7.2}
 \contentsline {subsection}{\numberline {7.3}Von der Zellularpathologie zu den Antitoxinen}{29}{subsection.7.3}
 \contentsline {subsection}{\numberline {7.4}Vom Keuchhuste zur Mengigokokkenimpfung}{33}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Impfempfehlung in \"Osterreich}{38}{subsection.7.5}
-\contentsline {section}{\numberline {8}Unf\"alle, Sch\"aden, Kritiker und Gegner}{39}{section.8}
-\contentsline {subsection}{\numberline {8.1}Was ist ein Impfschaden?}{39}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Unf\"alle und Sch\"aden durch mangelhafte Impfstoffe}{41}{subsection.8.2}
-\contentsline {section}{\numberline {9}Abk\"urzungsverzeichnis}{45}{section.9}
-\contentsline {section}{\numberline {10}Literaturverzeichnis}{46}{section.10}
-\contentsline {subsection}{\numberline {10.1}Onlineartikel}{49}{subsection.10.1}
-\contentsline {section}{\numberline {11}Gedruckte Quellen}{51}{section.11}
+\contentsline {subsection}{\numberline {7.5}Impfempfehlung in \"Osterreich}{39}{subsection.7.5}
+\contentsline {section}{\numberline {8}Unf\"alle, Sch\"aden, Kritiker und Gegner}{40}{section.8}
+\contentsline {subsection}{\numberline {8.1}Was ist ein Impfschaden?}{40}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Unf\"alle und Sch\"aden durch mangelhafte Impfstoffe}{42}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Eine kurze Geschichte der Impfgegner}{45}{subsection.8.3}
+\contentsline {section}{\numberline {9}Abk\"urzungsverzeichnis}{47}{section.9}
+\contentsline {section}{\numberline {10}Literaturverzeichnis}{48}{section.10}
+\contentsline {subsection}{\numberline {10.1}Onlineartikel}{52}{subsection.10.1}
+\contentsline {section}{\numberline {11}Gedruckte Quellen}{54}{section.11}
