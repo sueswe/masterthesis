@@ -1,26 +1,26 @@
 \contentsline {section}{\numberline {1}Einleitung}{4}{section.1}
-\contentsline {section}{\numberline {2}Forschungsgebiet}{7}{section.2}
-\contentsline {subsection}{\numberline {2.1}Worum es geht}{7}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Und worum nicht}{9}{subsection.2.2}
+\contentsline {section}{\numberline {2}Forschungsgebiet}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}Worum es geht}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Und worum nicht}{10}{subsection.2.2}
 \contentsline {section}{\numberline {3}Forschungsstand}{10}{section.3}
-\contentsline {section}{\numberline {4}Quellen}{12}{section.4}
+\contentsline {section}{\numberline {4}Quellen}{13}{section.4}
 \contentsline {section}{\numberline {5}Modernisierungstheorie}{13}{section.5}
-\contentsline {section}{\numberline {6}Methoden}{16}{section.6}
-\contentsline {subsection}{\numberline {6.1}Interviews}{16}{subsection.6.1}
+\contentsline {section}{\numberline {6}Methoden}{17}{section.6}
+\contentsline {subsection}{\numberline {6.1}Interviews}{17}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Der Vergleich}{18}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Qualitative Inhaltsanalyse}{19}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Ablaufmodell}{20}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Kategorien}{22}{subsubsection.6.3.2}
-\contentsline {section}{\numberline {7}Historische Kontext}{24}{section.7}
-\contentsline {subsection}{\numberline {7.1}Ein englischer Landarzt}{24}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Von der Kuhpockenvaccination zur allgemeinen Impfpflicht}{25}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Von der Zellularpathologie zu den Antitoxinen}{31}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Vom Keuchhuste zur Mengigokokkenimpfung}{35}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Impfempfehlung in \"Osterreich}{40}{subsection.7.5}
+\contentsline {subsubsection}{\numberline {6.3.1}Ablaufmodell}{21}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Kategorien}{23}{subsubsection.6.3.2}
+\contentsline {section}{\numberline {7}Historische Kontext}{25}{section.7}
+\contentsline {subsection}{\numberline {7.1}Ein englischer Landarzt}{25}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Von der Kuhpockenvaccination zur allgemeinen Impfpflicht}{26}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Von der Zellularpathologie zu den Antitoxinen}{32}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Vom Keuchhuste zur Mengigokokkenimpfung}{36}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Impfempfehlung in \"Osterreich}{41}{subsection.7.5}
 \contentsline {section}{\numberline {8}Unf\"alle, Sch\"aden, Kritiker und Gegner}{42}{section.8}
 \contentsline {subsection}{\numberline {8.1}Was ist ein Impfschaden?}{42}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Unf\"alle und Sch\"aden durch mangelhafte Impfstoffe}{43}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Eine kurze Geschichte der Impfgegner}{47}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.2}Unf\"alle und Sch\"aden durch mangelhafte Impfstoffe}{44}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Eine kurze Geschichte der Impfgegner}{48}{subsection.8.3}
 \contentsline {section}{\numberline {9}Auswertung und Kategorisierung der Argumente des 18. u. 19. Jahrhunderts}{54}{section.9}
 \contentsline {section}{\numberline {10}Auswertung und Kategorisierung der Argumente des 20. u. 21. Jahrhunderts}{54}{section.10}
 \contentsline {section}{\numberline {11}Auswertung und Kategorisierung der Interviews}{54}{section.11}
