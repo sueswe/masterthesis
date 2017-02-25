@@ -17,10 +17,13 @@ Class=LaTeXView
 Document=Master_Thesis_SUESS_1.2.tex
 
 [Frame0_View0,0]
-TopLine=1738
-Cursor=129773
+TopLine=1542
+Cursor=119014
 
 [SessionInfo]
 FrameCount=1
 ActiveFrame=0
+
+[Bookmarks]
+Master_Thesis_SUESS_1.2.tex=545 
 

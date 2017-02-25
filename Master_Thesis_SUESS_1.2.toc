@@ -21,14 +21,13 @@
 \contentsline {subsection}{\numberline {8.1}Was ist ein Impfschaden?}{42}{subsection.8.1}
 \contentsline {subsection}{\numberline {8.2}Unf\"alle und Sch\"aden durch mangelhafte Impfstoffe}{44}{subsection.8.2}
 \contentsline {subsection}{\numberline {8.3}Eine kurze Geschichte der Impfgegner}{48}{subsection.8.3}
-\contentsline {section}{\numberline {9}Auswertung und Kategorisierung der Argumente des 18. u. 19. Jahrhunderts}{54}{section.9}
-\contentsline {section}{\numberline {10}Auswertung und Kategorisierung der Argumente des 20. u. 21. Jahrhunderts}{54}{section.10}
-\contentsline {section}{\numberline {11}Auswertung und Kategorisierung der Interviews}{54}{section.11}
-\contentsline {section}{\numberline {12}Vergleich}{54}{section.12}
-\contentsline {section}{\numberline {13}Conclusio (Beantwortung der Fragen)}{54}{section.13}
-\contentsline {section}{\numberline {14}Abk\"urzungsverzeichnis}{55}{section.14}
-\contentsline {section}{\numberline {15}Literaturverzeichnis}{56}{section.15}
-\contentsline {subsection}{\numberline {15.1}Onlineartikel}{60}{subsection.15.1}
-\contentsline {section}{\numberline {16}Gedruckte Quellen}{63}{section.16}
-\contentsline {section}{\numberline {17}Anhang}{64}{section.17}
-\contentsline {subsection}{\numberline {17.1}Quellenverzeichnis der Argumente}{64}{subsection.17.1}
+\contentsline {section}{\numberline {9}Kategorisierung der Argumente}{54}{section.9}
+\contentsline {subsection}{\numberline {9.1}Contra-Argumente}{55}{subsection.9.1}
+\contentsline {section}{\numberline {10}Vergleich}{56}{section.10}
+\contentsline {section}{\numberline {11}Conclusio (Beantwortung der Fragen)}{56}{section.11}
+\contentsline {section}{\numberline {12}Abk\"urzungsverzeichnis}{57}{section.12}
+\contentsline {section}{\numberline {13}Literaturverzeichnis}{58}{section.13}
+\contentsline {subsection}{\numberline {13.1}Onlineartikel}{62}{subsection.13.1}
+\contentsline {section}{\numberline {14}Gedruckte Quellen}{65}{section.14}
+\contentsline {section}{\numberline {15}Anhang}{66}{section.15}
+\contentsline {subsection}{\numberline {15.1}Quellenverzeichnis der Argumente}{66}{subsection.15.1}
