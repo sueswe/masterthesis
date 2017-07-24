@@ -3,35 +3,35 @@
 \contentsline {subsection}{\numberline {2.1}Forschungsfragen}{8}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Abgrenzung des Forschungsgebietes}{10}{subsection.2.2}
 \contentsline {section}{\numberline {3}Forschungsstand und Quellenbasis}{10}{section.3}
-\contentsline {section}{\numberline {4}Der theoretische Rahmen: Die Modernisierungstheorie}{13}{section.4}
+\contentsline {section}{\numberline {4}Der theoretische Rahmen: Die Modernisierungstheorie}{14}{section.4}
 \contentsline {section}{\numberline {5}Methoden}{17}{section.5}
-\contentsline {subsection}{\numberline {5.1}Der historische Vergleich}{17}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Qualitative Inhaltsanalyse}{19}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Ablaufmodell}{20}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Kategorien}{22}{subsubsection.5.2.2}
-\contentsline {subsection}{\numberline {5.3}Auswahlkriterium der Argumente}{23}{subsection.5.3}
-\contentsline {section}{\numberline {6}Historischer Kontext}{25}{section.6}
-\contentsline {subsection}{\numberline {6.1}Ein englischer Landarzt}{26}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Von der Kuhpockenvaccination zur allgemeinen Impfpflicht}{27}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Von der Zellularpathologie zu den Antitoxinen}{33}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Vom Keuchhusten zur Mengigokokkenimpfung}{37}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Impfempfehlung in \"Osterreich}{42}{subsection.6.5}
-\contentsline {section}{\numberline {7}Unf\"alle, Sch\"aden, Kritiker und Gegner}{43}{section.7}
-\contentsline {subsection}{\numberline {7.1}Was ist ein Impfschaden?}{44}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Unf\"alle und Sch\"aden durch mangelhafte Impfstoffe}{46}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Eine kurze Geschichte der Impfgegner}{49}{subsection.7.3}
-\contentsline {section}{\numberline {8}Kategorisierung und Auswertung der Argumente}{56}{section.8}
-\contentsline {subsection}{\numberline {8.1}Kategorisierung der Contraargumente}{58}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Kategoriesierung der Proargumente}{60}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Auswertung der Impfbef\"urworterargumente}{62}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}Auswertung der Impfgegnerargumente}{64}{subsection.8.4}
-\contentsline {section}{\numberline {9}Vergleich}{66}{section.9}
-\contentsline {section}{\numberline {10}Conclusio (Beantwortung der Fragen)}{85}{section.10}
-\contentsline {section}{\numberline {11}Abk\"urzungsverzeichnis}{98}{section.11}
-\contentsline {section}{\numberline {12}Glossar}{99}{section.12}
-\contentsline {section}{\numberline {13}Literaturverzeichnis}{100}{section.13}
-\contentsline {section}{\numberline {14}Onlineartikel}{105}{section.14}
-\contentsline {section}{\numberline {15}Gedruckte Quellen}{109}{section.15}
-\contentsline {section}{\numberline {16}Anhang}{110}{section.16}
-\contentsline {subsection}{\numberline {16.1}Quellenverzeichnis der Argumente}{110}{subsection.16.1}
-\contentsline {subsection}{\numberline {16.2}Liste der ausgewerteten Argumente}{113}{subsection.16.2}
+\contentsline {subsection}{\numberline {5.1}Qualitative Inhaltsanalyse}{18}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Ablaufmodell}{20}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Kategorien}{22}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Auswahlkriterium der Argumente}{23}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Der historische Vergleich}{26}{subsection.5.3}
+\contentsline {section}{\numberline {6}Historischer Kontext}{27}{section.6}
+\contentsline {subsection}{\numberline {6.1}Ein englischer Landarzt}{27}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Von der Kuhpockenvaccination zur allgemeinen Impfpflicht}{29}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Von der Zellularpathologie zu den Antitoxinen}{35}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Vom Keuchhusten zur Mengigokokkenimpfung}{39}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Impfempfehlung in \"Osterreich}{44}{subsection.6.5}
+\contentsline {section}{\numberline {7}Unf\"alle, Sch\"aden, Kritiker und Gegner}{45}{section.7}
+\contentsline {subsection}{\numberline {7.1}Was ist ein Impfschaden?}{46}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Unf\"alle und Sch\"aden durch mangelhafte Impfstoffe}{48}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Eine kurze Geschichte der Impfgegner}{51}{subsection.7.3}
+\contentsline {section}{\numberline {8}Kategorisierung und Auswertung der Argumente}{58}{section.8}
+\contentsline {subsection}{\numberline {8.1}Kategorisierung der Contraargumente}{60}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Kategoriesierung der Proargumente}{62}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Auswertung der Impfbef\"urworterargumente}{64}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Auswertung der Impfgegnerargumente}{66}{subsection.8.4}
+\contentsline {section}{\numberline {9}Vergleich}{68}{section.9}
+\contentsline {section}{\numberline {10}Conclusio (Beantwortung der Fragen)}{89}{section.10}
+\contentsline {section}{\numberline {11}Abk\"urzungsverzeichnis}{102}{section.11}
+\contentsline {section}{\numberline {12}Glossar}{103}{section.12}
+\contentsline {section}{\numberline {13}Literaturverzeichnis}{104}{section.13}
+\contentsline {section}{\numberline {14}Onlineartikel}{109}{section.14}
+\contentsline {section}{\numberline {15}Gedruckte Quellen}{113}{section.15}
+\contentsline {section}{\numberline {16}Anhang}{114}{section.16}
+\contentsline {subsection}{\numberline {16.1}Quellenverzeichnis der Argumente}{114}{subsection.16.1}
+\contentsline {subsection}{\numberline {16.2}Liste der ausgewerteten Argumente}{117}{subsection.16.2}
