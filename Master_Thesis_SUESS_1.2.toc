@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {7.3}Eine kurze Geschichte der Impfgegner}{53}{subsection.7.3}
 \contentsline {section}{\numberline {8}Kategorisierung und Auswertung der Argumente}{60}{section.8}
 \contentsline {subsection}{\numberline {8.1}Kategorisierung der Contraargumente}{62}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Kategoriesierung der Proargumente}{64}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.2}Kategorisierung der Proargumente}{64}{subsection.8.2}
 \contentsline {subsection}{\numberline {8.3}Auswertung der Impfbef\"urworterargumente}{66}{subsection.8.3}
 \contentsline {subsection}{\numberline {8.4}Auswertung der Impfgegnerargumente}{68}{subsection.8.4}
 \contentsline {section}{\numberline {9}Vergleich}{70}{section.9}
