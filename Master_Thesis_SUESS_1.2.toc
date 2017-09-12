@@ -26,12 +26,12 @@
 \contentsline {subsection}{\numberline {8.3}Auswertung der Impfbef\"urworterargumente}{66}{subsection.8.3}
 \contentsline {subsection}{\numberline {8.4}Auswertung der Impfgegnerargumente}{68}{subsection.8.4}
 \contentsline {section}{\numberline {9}Vergleich}{70}{section.9}
-\contentsline {section}{\numberline {10}Fazit unter Betrachtung der Theorie und Beantwortung der Forschungsfragen}{93}{section.10}
-\contentsline {section}{\numberline {11}Abk\"urzungsverzeichnis}{106}{section.11}
-\contentsline {section}{\numberline {12}Glossar}{107}{section.12}
-\contentsline {section}{\numberline {13}Literaturverzeichnis}{108}{section.13}
-\contentsline {section}{\numberline {14}Onlineartikel}{113}{section.14}
-\contentsline {section}{\numberline {15}Gedruckte Quellen}{118}{section.15}
-\contentsline {section}{\numberline {16}Anhang}{121}{section.16}
-\contentsline {subsection}{\numberline {16.1}Quellenverzeichnis der Argumente}{121}{subsection.16.1}
-\contentsline {subsection}{\numberline {16.2}Liste der ausgewerteten Argumente}{124}{subsection.16.2}
+\contentsline {section}{\numberline {10}Fazit unter Betrachtung der Theorie und Beantwortung der Forschungsfragen}{94}{section.10}
+\contentsline {section}{\numberline {11}Abk\"urzungsverzeichnis}{107}{section.11}
+\contentsline {section}{\numberline {12}Glossar}{108}{section.12}
+\contentsline {section}{\numberline {13}Literaturverzeichnis}{109}{section.13}
+\contentsline {section}{\numberline {14}Onlineartikel}{114}{section.14}
+\contentsline {section}{\numberline {15}Gedruckte Quellen}{119}{section.15}
+\contentsline {section}{\numberline {16}Anhang}{122}{section.16}
+\contentsline {subsection}{\numberline {16.1}Quellenverzeichnis der Argumente}{122}{subsection.16.1}
+\contentsline {subsection}{\numberline {16.2}Liste der ausgewerteten Argumente}{125}{subsection.16.2}
