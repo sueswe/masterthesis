@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Master_Thesis_SUESS_1.2.tex
 
 [Frame0_View0,0]
-TopLine=2299
-Cursor=183102
+TopLine=94
+Cursor=3352
 
 [SessionInfo]
 FrameCount=1
