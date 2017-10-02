@@ -11,13 +11,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=999
-NormalPos.bottom=733
+NormalPos.right=804
+NormalPos.bottom=668
 Class=LaTeXView
 Document=Master_Thesis_SUESS_1.2.tex
 
 [Frame0_View0,0]
-TopLine=94
+TopLine=74
 Cursor=3352
 
 [SessionInfo]
