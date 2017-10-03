@@ -1,38 +1,38 @@
 \contentsline {section}{\numberline {1}Gendererkl\IeC {\"a}rung}{4}{section.1}
 \contentsline {section}{\numberline {2}Einleitung}{5}{section.2}
-\contentsline {section}{\numberline {3}Forschungsgebiet}{9}{section.3}
+\contentsline {section}{\numberline {3}Forschungsgebiet}{8}{section.3}
 \contentsline {subsection}{\numberline {3.1}Forschungsfragen}{9}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Abgrenzung des Forschungsgebietes}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Abgrenzung des Forschungsgebietes}{10}{subsection.3.2}
 \contentsline {section}{\numberline {4}Forschungsstand und Quellenbasis}{11}{section.4}
 \contentsline {section}{\numberline {5}Der theoretische Rahmen: Die Modernisierungstheorie}{17}{section.5}
-\contentsline {section}{\numberline {6}Methoden}{21}{section.6}
+\contentsline {section}{\numberline {6}Methoden}{20}{section.6}
 \contentsline {subsection}{\numberline {6.1}Qualitative Inhaltsanalyse}{21}{subsection.6.1}
 \contentsline {subsubsection}{\numberline {6.1.1}Ablaufmodell}{23}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Kategorien}{26}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2}Kategorien}{25}{subsubsection.6.1.2}
 \contentsline {subsection}{\numberline {6.2}Auswahlkriterium der Argumente}{26}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Der historische Vergleich}{29}{subsection.6.3}
-\contentsline {section}{\numberline {7}Historischer Kontext}{30}{section.7}
-\contentsline {subsection}{\numberline {7.1}Ein englischer Landarzt}{31}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Von der Kuhpockenvaccination zur allgemeinen Impfpflicht}{32}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Von der Zellularpathologie zu den Antitoxinen}{39}{subsection.7.3}
+\contentsline {subsection}{\numberline {6.3}Der historische Vergleich}{28}{subsection.6.3}
+\contentsline {section}{\numberline {7}Historischer Kontext}{29}{section.7}
+\contentsline {subsection}{\numberline {7.1}Ein englischer Landarzt}{30}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Von der Kuhpockenvaccination zur allgemeinen Impfpflicht}{31}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Von der Zellularpathologie zu den Antitoxinen}{38}{subsection.7.3}
 \contentsline {subsection}{\numberline {7.4}Vom Keuchhusten zur Mengigokokkenimpfung}{42}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Impfempfehlung in \IeC {\"O}sterreich}{48}{subsection.7.5}
-\contentsline {section}{\numberline {8}Unf\IeC {\"a}lle, Sch\IeC {\"a}den, Kritiker und Gegner}{49}{section.8}
-\contentsline {subsection}{\numberline {8.1}Was ist ein Impfschaden?}{50}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Unf\IeC {\"a}lle und Sch\IeC {\"a}den durch mangelhafte Impfstoffe}{52}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Eine kurze Geschichte der Impfgegner}{55}{subsection.8.3}
-\contentsline {section}{\numberline {9}Kategorisierung und Auswertung der Argumente}{62}{section.9}
-\contentsline {subsection}{\numberline {9.1}Kategorisierung der Contraargumente}{64}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Kategorisierung der Proargumente}{67}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Auswertung der Impfbef\IeC {\"u}rworterargumente}{68}{subsection.9.3}
-\contentsline {subsection}{\numberline {9.4}Auswertung der Impfgegnerargumente}{71}{subsection.9.4}
-\contentsline {section}{\numberline {10}Vergleich}{73}{section.10}
-\contentsline {section}{\numberline {11}Fazit unter Betrachtung der Theorie und Beantwortung der Forschungsfragen}{98}{section.11}
-\contentsline {section}{\numberline {12}Abk\IeC {\"u}rzungsverzeichnis}{110}{section.12}
-\contentsline {section}{\numberline {13}Glossar}{111}{section.13}
-\contentsline {section}{\numberline {14}Literaturverzeichnis}{112}{section.14}
-\contentsline {section}{\numberline {15}Onlineartikel}{118}{section.15}
-\contentsline {section}{\numberline {16}Gedruckte Quellen}{123}{section.16}
-\contentsline {section}{\numberline {17}Anhang}{126}{section.17}
-\contentsline {subsection}{\numberline {17.1}Quellenverzeichnis der Argumente}{126}{subsection.17.1}
-\contentsline {subsection}{\numberline {17.2}Liste der ausgewerteten Argumente}{130}{subsection.17.2}
+\contentsline {subsection}{\numberline {7.5}Impfempfehlung in \IeC {\"O}sterreich}{47}{subsection.7.5}
+\contentsline {section}{\numberline {8}Unf\IeC {\"a}lle, Sch\IeC {\"a}den, Kritiker und Gegner}{48}{section.8}
+\contentsline {subsection}{\numberline {8.1}Was ist ein Impfschaden?}{48}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Unf\IeC {\"a}lle und Sch\IeC {\"a}den durch mangelhafte Impfstoffe}{50}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Eine kurze Geschichte der Impfgegner}{54}{subsection.8.3}
+\contentsline {section}{\numberline {9}Kategorisierung und Auswertung der Argumente}{60}{section.9}
+\contentsline {subsection}{\numberline {9.1}Kategorisierung der Contraargumente}{63}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Kategorisierung der Proargumente}{65}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Auswertung der Impfbef\IeC {\"u}rworterargumente}{66}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Auswertung der Impfgegnerargumente}{69}{subsection.9.4}
+\contentsline {section}{\numberline {10}Vergleich}{72}{section.10}
+\contentsline {section}{\numberline {11}Fazit unter Betrachtung der Theorie und Beantwortung der Forschungsfragen}{96}{section.11}
+\contentsline {section}{\numberline {12}Abk\IeC {\"u}rzungsverzeichnis}{108}{section.12}
+\contentsline {section}{\numberline {13}Glossar}{109}{section.13}
+\contentsline {section}{\numberline {14}Literaturverzeichnis}{110}{section.14}
+\contentsline {section}{\numberline {15}Onlineartikel}{116}{section.15}
+\contentsline {section}{\numberline {16}Gedruckte Quellen}{121}{section.16}
+\contentsline {section}{\numberline {17}Anhang}{124}{section.17}
+\contentsline {subsection}{\numberline {17.1}Quellenverzeichnis der Argumente}{124}{subsection.17.1}
+\contentsline {subsection}{\numberline {17.2}Liste der ausgewerteten Argumente}{128}{subsection.17.2}
