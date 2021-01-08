@@ -1,3 +1,3 @@
 # MasterThesis
-=======
-Katharina's master-Arbeit 
+
+Katharina Süß' master-thesis
